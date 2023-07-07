@@ -1,8 +1,69 @@
 @font-face {
+  font-family: "RobotoCondensed";
+  src: local('Custom Font'),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Light.woff2"),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Light.woff");
+  font-weight: 300;
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: local('Custom Font'),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Regular.woff2"),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: local('Custom Font'),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-medium.woff2"),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-medium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: local('Custom Font'),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2"),
+  url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlumniSans";
+  src: local('Custom Font'),
+  url("./../../fonts/Alumni_Sans/AlumniSans-SemiBold.woff2"),
+  url("./../../fonts/Alumni_Sans/AlumniSans-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlumniSans";
+  src: local('Custom Font'),
+  url("./../../fonts/Alumni_Sans/AlumniSans-Bold.woff2"),
+  url("./../../fonts/Alumni_Sans/AlumniSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlumniSans";
+  src: local('Custom Font'),
+  url("./../../fonts/Alumni_Sans/AlumniSans-ExtraBold.woff2"),
+  url("./../../fonts/Alumni_Sans/AlumniSans-ExtraBold.woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
