@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(3, 10, 26, 1);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: auto min-content min-content min-content min-content min-content auto;
+  align-items: center;
+  width: 1366px;
+  margin: 0;
+  padding: 29px 97px 29px 103px;
+}
+
+.footer__logo {
+  color: #fff;
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+}
+
+.footer__item {
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
