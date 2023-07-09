@@ -3,12 +3,44 @@
   justify-content: end;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .footer-list {
+    order: 7;
+    padding-top: 20px;
+    justify-content: start;
+  }
 }
 
 .footer-list__item {
+  position: relative;
   margin: 0;
   padding: 0;
+  background: transparent;
+}
+
+.footer-list__item-link {
+  display: block;
   width: 35px;
   height: 35px;
-  background: transparent;
+}
+
+.footer-list__item-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.footer-list__item-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

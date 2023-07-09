@@ -43,13 +43,15 @@
             </div>
             <span class="hero__city">омск</span>
             <h1 class="hero__title">Фитнес центр</h1>
-            <button class="hero__subscription" type="button">Купить абонемент</button>
+            <button class="hero__subscription" type="button" aria-label="на страницу оформления покупки абонемента">
+              Купить абонемент
+            </button>
           </div>
           <div class="hero__image-wrapper">
             <picture>
               <source
                 type="image/webp"
-                media="(max-width: 1365px)"
+                media="(max-width: 1199px)"
                 srcset="img/hero/hero-image-tablet.webp 1x, img/hero/hero-image-tablet@2x.webp 2x"
                 width="324"
                 height="390"
@@ -61,7 +63,7 @@
                 height="556"
               >
               <source
-                media="(max-width: 1365px)"
+                media="(max-width: 1199px)"
                 srcset="img/hero/hero-image-tablet.jpg 1x, img/hero/hero-image-tablet@2x.jpg 2x"
                 width="324"
                 height="390"
@@ -79,40 +81,215 @@
       </section>
     </div>
 
+    <div class="gym">
+      <section class="gym__inner">
+        <div class="gym__inner-box">
+          <div>
+            <h2>Тренажерный зал</h2>
+            <span>Просторный зал площадью 900 кв/м</span>
+          </div>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p><span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.</span></p>
+        </div>
+        <div class="gym__inner-image">
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="img/gym-image/gym-image-mobile.webp 1x, img/gym-image/gym-image-mobile@2x.webp 2x"
+              width="320"
+              height="313"
+            >
+            <source
+              type="image/webp"
+              media="(max-width: 1199px)"
+              srcset="img/gym-image/gym-image-tablet.webp 1x, img/gym-image/gym-image-tablet@2x.webp 2x"
+              width="678"
+              height="345"
+            >
+            <source
+              type="image/webp"
+              srcset="img/gym-image/gym-image-desktop.webp 1x, img/gym-image/gym-image-desktop@2x.webp 2x"
+              width="660"
+              height="401"
+            >
+            <source
+              media="(max-width: 767px)"
+              srcset="img/gym-image/gym-image-mobile.jpg 1x, img/gym-image/gym-image-mobile@2x.jpg 2x"
+              width="320"
+              height="313"
+            >
+            <source
+              media="(max-width: 1199px)"
+              srcset="img/gym-image/gym-image-tablet.jpg 1x, img/gym-image/gym-image-tablet@2x.jpg 2x"
+              width="678"
+              height="345"
+            >
+            <img
+              src="img/gym-image/gym-image-desktop.jpg"
+              srcset="img/gym-image/gym-image-desktop@2x.jpg"
+              width="660"
+              height="401"
+              alt="изображение тренажеров"
+            >
+          </picture>
+        </div>
+        <div class="gym__inner-video-wrapper" aria-hidden="true">
+
+          <iframe
+            class="gym__inner-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jhBmZPy02s4"
+            title="YouTube video player"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <svg
+            class="gym__inner-video-button"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+          >
+            <circle
+              class="gym__inner-video-button-big-circle"
+              cx="50"
+              cy="50"
+              r="49"
+              stroke="url(#paint0_linear_1_293)"
+              stroke-opacity="0.2"
+              stroke-width="2"
+            />
+            <circle
+              class="gym__inner-video-button-small-circle"
+              cx="50"
+              cy="50"
+              r="36"
+              fill="url(#paint1_linear_1_293)"
+            />
+
+            <path
+              class="gym__inner-video-button-triangle"
+              d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
+              fill="white"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1_293"
+                x1="19.774"
+                y1="3.00672e-05"
+                x2="105.785"
+                y2="10.6444"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#ED0233"/>
+                <stop offset="1" stop-color="#003EB7"/>
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_1_293"
+                x1="14"
+                y1="49.52"
+                x2="54.1858"
+                y2="9.18415"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#003D85"/>
+                <stop offset="0.885417" stop-color="#B80027"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="subscriptions">
+      <section class="subscriptions__inner">
+        <h2 class="subscriptions__title">Абонементы</h2>
+        <ol class="months-list">
+          <li class="months-list__item">
+            <button class="months-list__item-button" type="button" aria-label="перейти к выбору программы на один месяц">
+              <span aria-hidden="true">1 месяц</span>
+            </button>
+          </li>
+          <li class="months-list__item">
+            <button class="months-list__item-button" type="button" aria-label="перейти к выбору программы на шесть месяцев">
+              <span aria-hidden="true">6 месяцев</span>
+            </button>
+          </li>
+          <li class="months-list__item">
+            <button class="months-list__item-button" type="button" aria-label="перейти к выбору программы на год">
+              <span aria-hidden="true">12 месяцев</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+    </div>
+
   </main>
 
-  <footer>
-    <div class="footer">
-      <div class="footer__inner">
+<!--  <footer>-->
+<!--    <div class="footer">-->
+<!--      <div class="footer__inner">-->
 
-        <a class="footer__logo" href="#" aria-label="в начало страницы">supergim</a>
-        <span class="footer__item">Услуги</span>
-        <span class="footer__item">Абонементы</span>
-        <span class="footer__item">Акции</span>
-        <span class="footer__item">Тренеры</span>
-        <span class="footer__item">Расписание</span>
+<!--        <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>-->
+<!--        <a class="footer__item footer__item&#45;&#45;2" href="#" aria-label="переход к разделу">Услуги</a>-->
+<!--        <a class="footer__item footer__item&#45;&#45;3" href="#" aria-label="переход к разделу">Абонементы</a>-->
+<!--        <a class="footer__item footer__item&#45;&#45;4" href="#" aria-label="переход к разделу">Акции</a>-->
+<!--        <a class="footer__item footer__item&#45;&#45;5" href="#" aria-label="переход к разделу">Тренеры</a>-->
+<!--        <a class="footer__item footer__item&#45;&#45;6" href="#" aria-label="переход к разделу">Расписание</a>-->
 
-        <ul class="footer-list">
-          <li class="footer-list__item">
-            <a class="footer-list__item-link" href="#" aria-label="">
+<!--        <ul class="footer-list">-->
 
-            </a>
-          </li>
-          <li class="footer-list__item">
-            <a class="footer-list__item-link" href="#" aria-label="">
+<!--          <li class="footer-list__item">-->
+<!--            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
+<!--              <svg-->
+<!--                class="footer-list__item-image"-->
+<!--                width="15"-->
+<!--                height="15"-->
+<!--                aria-hidden="true"-->
+<!--              >-->
+<!--                <use href="img/sprite.svg#vk"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
 
-            </a>
-          </li>
-          <li class="footer-list__item">
-            <a class="footer-list__item-link" href="#" aria-label="">
+<!--          <li class="footer-list__item">-->
+<!--            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">-->
+<!--              <svg-->
+<!--                class="footer-list__item-image"-->
+<!--                width="10"-->
+<!--                height="17"-->
+<!--                aria-hidden="true"-->
+<!--              >-->
+<!--                <use href="img/sprite.svg#ok"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
 
-            </a>
-          </li>
-        </ul>
+<!--          <li class="footer-list__item">-->
+<!--            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">-->
+<!--              <svg-->
+<!--                class="footer-list__item-image"-->
+<!--                width="23"-->
+<!--                height="23"-->
+<!--                aria-hidden="true"-->
+<!--              >-->
+<!--                <use href="img/sprite.svg#reddit"></use>-->
+<!--              </svg>-->
+<!--            </a>-->
+<!--          </li>-->
 
-      </div>
-    </div>
-  </footer>
+<!--        </ul>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </footer>-->
 
 </div>
 
