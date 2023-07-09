@@ -1,0 +1,35 @@
+.months-list {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 38px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.months-list__item {
+  margin: 0;
+  padding: 0;
+}
+
+.months-list__item-button {
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: rgba(16, 38, 84, 0.5);
+  background: transparent;
+  cursor: pointer;
+}
+
+.months-list__item-button:hover:not(:disabled),
+.months-list__item-button:focus-visible:not(:disabled) {
+  color: rgba(16, 38, 84, 1);
+  box-shadow: 0 2px 0 rgba(237, 2, 51, 1);
+}
+
+.months-list__item-button:disabled {
+  cursor: auto;
+  box-shadow: 0 2px 0 rgba(248, 249, 252, 1);
+}
