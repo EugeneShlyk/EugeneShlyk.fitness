@@ -2076,7 +2076,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 6px;
-  margin: 0 0 40px;
+  margin: 0 0 38px;
   padding: 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -2102,13 +2102,94 @@ button,
 .months-list__item-button:focus-visible:not(:disabled) {
   color: rgb(16, 38, 84);
   -webkit-box-shadow: 0 2px 0 rgb(237, 2, 51);
-  box-shadow: 0 2px 0 rgb(237, 2, 51);
+          box-shadow: 0 2px 0 rgb(237, 2, 51);
 }
 
 .months-list__item-button:disabled {
   cursor: auto;
   -webkit-box-shadow: 0 2px 0 rgb(248, 249, 252);
-  box-shadow: 0 2px 0 rgb(248, 249, 252);
+          box-shadow: 0 2px 0 rgb(248, 249, 252);
+}
+
+.program {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 360px 360px;
+  grid-template-columns: 360px 360px 360px;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 68px 0;
+  background: rgb(255, 255, 255);
+  border: 7px solid rgb(255, 255, 255);
+}
+
+.program__item:hover,
+.program__item:focus-within {
+  outline: none;
+}
+
+.program__item-option {
+  margin: 0 0 22px;
+  padding: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.program__price-block {
+  margin: 0 0 58px;
+  padding: 0;
+}
+
+.program__item-term {
+  margin: 0 0 96px;
+  padding: 0;
+  color: rgb(73, 90, 125);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.program__item-price {
+  margin: 0 14px 0 0;
+  padding: 0;
+  color: rgb(16, 58, 174);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70%;
+}
+
+.program__item-button {
+  width: 210px;
+  height: 68px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 27px 0;
+  color: rgb(16, 38, 84);
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border: 2px solid rgb(16, 38, 84);
 }
 
 /* @mixin hover-focus {
