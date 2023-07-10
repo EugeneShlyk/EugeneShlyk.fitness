@@ -2132,6 +2132,12 @@ button,
     margin-bottom: 44px;
   }
 }
+@media (max-width: 767px) {
+  .months-list {
+    gap: 6px;
+    margin-bottom: 35px;
+  }
+}
 .months-list__item {
   margin: 0;
   padding: 0;
@@ -2153,6 +2159,12 @@ button,
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+  }
+}
+@media (max-width: 767px) {
+  .months-list__item-button {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .months-list__item-button:hover:not(:disabled),
@@ -2183,6 +2195,12 @@ button,
   .program {
     -ms-grid-columns: 442px;
     grid-template-columns: 442px;
+  }
+}
+@media (max-width: 767px) {
+  .program {
+    -ms-grid-columns: 290px;
+    grid-template-columns: 290px;
   }
 }
 .program::after {
@@ -2216,6 +2234,11 @@ button,
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .program__item-real-button {
+    padding: 42px 0 70px;
+  }
+}
 .program__item-real-button:hover,
 .program__item-real-button:focus-visible {
   border: 7px solid;
@@ -2245,6 +2268,13 @@ button,
   line-height: 30px;
 }
 
+@media (max-width: 767px) {
+  .program__item-option {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
 .program__item-term {
   display: block;
   margin: 0 0 92px;
@@ -2255,6 +2285,11 @@ button,
   line-height: 19px;
 }
 
+@media (max-width: 767px) {
+  .program__item-term {
+    margin-bottom: 65px;
+  }
+}
 .program__price-block {
   position: relative;
   display: block;
@@ -2276,6 +2311,12 @@ button,
   line-height: 117px;
 }
 
+@media (max-width: 767px) {
+  .program__item-price-shadow {
+    font-size: 80px;
+    line-height: 94px;
+  }
+}
 .program__item-price {
   position: relative;
   z-index: 1;
@@ -2287,11 +2328,34 @@ button,
   line-height: 70%;
 }
 
+@media (max-width: 767px) {
+  .program__item-price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+}
 .program__item-ruble {
   position: relative;
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  .program__item-ruble {
+    display: none;
+  }
+}
+.program__item-ruble-mini {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .program__item-ruble-mini {
+    display: inline;
+  }
+}
 .program__item-button {
   display: block;
   width: 210px;
