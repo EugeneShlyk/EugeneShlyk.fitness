@@ -2026,6 +2026,10 @@ button,
   fill: rgb(16, 38, 84);
 }
 
+.gym__inner-video-button--hidden {
+  display: none;
+}
+
 .subscriptions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2069,7 +2073,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscriptions__inner {
-    padding: 63px 0 100px;
+    padding: 63px 0 70px;
   }
 }
 .subscriptions__title {
@@ -2199,15 +2203,11 @@ button,
 }
 @media (max-width: 767px) {
   .program {
+    gap: 35px;
     -ms-grid-columns: 290px;
     grid-template-columns: 290px;
   }
 }
-.program::after {
-  content: "";
-  position: absolute;
-}
-
 .program__item {
   margin: 0;
   padding: 0;
@@ -2236,7 +2236,7 @@ button,
 
 @media (max-width: 767px) {
   .program__item-real-button {
-    padding: 42px 0 70px;
+    padding: 42px 0 47px;
   }
 }
 .program__item-real-button:hover,
@@ -2297,6 +2297,11 @@ button,
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .program__price-block {
+    margin-bottom: 39px;
+  }
+}
 .program__item-price-shadow {
   position: absolute;
   top: -60px;
@@ -2313,6 +2318,7 @@ button,
 
 @media (max-width: 767px) {
   .program__item-price-shadow {
+    top: -37px;
     font-size: 80px;
     line-height: 94px;
   }
@@ -2330,6 +2336,7 @@ button,
 
 @media (max-width: 767px) {
   .program__item-price {
+    margin-right: 6px;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;

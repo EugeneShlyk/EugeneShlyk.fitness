@@ -180,7 +180,6 @@
 }
 
 .gym__inner-video {
-
   width: 364px;
   height: 228px;
   border: none;
@@ -222,4 +221,8 @@
   .gym__inner-video-button-triangle {
     fill: rgba(16, 38, 84, 1);
   }
+}
+
+.gym__inner-video-button--hidden {
+  display: none;
 }
