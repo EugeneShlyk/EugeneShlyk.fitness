@@ -240,54 +240,91 @@
 
         <ol class="program">
           <li class="program__item">
-            <p class="program__item-option">С тренером</p>
-            <p class="program__item-term">12 занятий</p>
-            <div class="program__price-block">
-              <span class="program__item-price">5000</span>
-              <svg
-                class="program__item-ruble"
-                width="30"
-                height="42"
-                aria-hidden="true"
-              >
-                <use href="img/sprite.svg#ruble"></use>
-              </svg>
-            </div>
-            <button class="program__item-button" type="button">купить абонемент</button>
+            <button class="program__item-real-button" type="button">
+              <span class="program__item-option">С тренером</span>
+              <span class="program__item-term">12 занятий</span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">5000</span>
+                <span class="program__item-price">5000</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </button>
           </li>
           <li class="program__item">
-            <p class="program__item-option">Дневной</p>
-            <p class="program__item-term">с 8:00 до 17:00 </p>
-            <div class="program__price-block">
-              <span class="program__item-price">1700</span>
-              <svg
-                class="program__item-ruble"
-                width="30"
-                height="42"
-                aria-hidden="true"
-              >
-                <use href="img/sprite.svg#ruble"></use>
-              </svg>
-            </div>
-            <button class="program__item-button" type="button">купить абонемент</button>
+            <button class="program__item-real-button" type="button">
+              <span class="program__item-option">Дневной</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">1700</span>
+                <span class="program__item-price">1700</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </button>
           </li>
           <li class="program__item">
-            <p class="program__item-option">Полный день</p>
-            <p class="program__item-term">с 8:00 до 17:00 </p>
-            <div class="program__price-block">
-              <span class="program__item-price">1700</span>
-              <svg
-                class="program__item-ruble"
-                width="30"
-                height="42"
-                aria-hidden="true"
-              >
-                <use href="img/sprite.svg#ruble"></use>
-              </svg>
-            </div>
-            <button class="program__item-button" type="button">купить абонемент</button>
+            <button class="program__item-real-button" type="button">
+              <span class="program__item-option">Полный день</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">2700</span>
+                <span class="program__item-price">2700</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </button>
           </li>
         </ol>
+        <div class="subscriptions__background">
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 1199px)"
+              srcset="img/subscriptions/subscriptions-background-weight-tablet.webp 1x, img/subscriptions/subscriptions-background-weight-tablet@2x.webp 2x"
+              width="422"
+            >
+            <source
+              type="image/webp"
+              srcset="img/subscriptions/subscriptions-background-weight.webp 1x, img/subscriptions/subscriptions-background-weight@2x.webp 2x"
+              width="470"
+              height="494"
+            >
+            <source
+              media="(max-width: 1199px)"
+              srcset="img/subscriptions/subscriptions-background-weight-tablet.png 1x, img/subscriptions/subscriptions-background-weight-tablet@2x.png 2x"
+              width="422"
+            >
+            <img
+              src="img/subscriptions/subscriptions-background-weight.png"
+              srcset="img/subscriptions/subscriptions-background-weight@2x.png 2x"
+              width="470"
+              height="494"
+              alt="принадлежности для тренировок"
+            >
+          </picture>
+        </div>
       </section>
     </div>
 

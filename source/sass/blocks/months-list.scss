@@ -7,13 +7,20 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
+@media (max-width: 1199px) {
+  .months-list {
+    gap: 15px;
+    margin-bottom: 44px;
+  }
+}
+
 .months-list__item {
   margin: 0;
   padding: 0;
 }
 
 .months-list__item-button {
-  padding: 20px;
+  padding: 20px 20px 14px;
   border: none;
   font-size: 20px;
   font-weight: 400;
@@ -21,6 +28,20 @@
   color: rgba(16, 38, 84, 0.5);
   background: transparent;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .months-list__item-button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  .months-list__item-button {
+
+  }
 }
 
 .months-list__item-button:hover:not(:disabled),
