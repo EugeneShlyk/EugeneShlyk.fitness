@@ -1,0 +1,25 @@
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__inner {
+  width: 1200px;
+  margin: 0;
+  padding: 15px 20px 105px;
+}
+
+.slider__title {
+  margin: 0 0 48px;
+  padding: 0;
+  color: rgba(16, 38, 84, 1);
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+}
