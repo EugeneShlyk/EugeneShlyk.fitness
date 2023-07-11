@@ -10,7 +10,13 @@
 @media (max-width: 1199px) {
   .games-box {
     width: 292px;
-    padding: 51px 45px;
+    padding: 51px 45px 48px;
+  }
+}
+@media (max-width: 767px) {
+  .games-box {
+    width: 290px;
+    padding-bottom: 49px;
   }
 }
 
@@ -28,6 +34,7 @@
 
 @media (max-width: 1199px) {
   .games-box__title {
+    padding-left: 8px;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: 1.44px;
@@ -46,6 +53,8 @@
 
 @media (max-width: 1199px) {
   .games-box__text{
+    margin-top: 8px;
+    margin-bottom: 32px;
     font-size: 12px;
     line-height: 14px;
   }
@@ -63,4 +72,13 @@
   text-transform: uppercase;
   background: transparent;
   border: 4px solid rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1199px) {
+  .games-box__button {
+    padding: 12px 0;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    border: 2px solid rgba(255, 255, 255, 1);
+  }
 }

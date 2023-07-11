@@ -25,8 +25,9 @@
 
 @media (max-width: 767px) {
   .games__inner {
-    width: 320px;
     flex-direction: column;
+    width: 320px;
+    padding: 70px 15px 50px;
   }
 }
 
