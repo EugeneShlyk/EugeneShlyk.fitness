@@ -2045,10 +2045,22 @@ button,
   margin: 0;
   padding: 0;
   color: rgb(16, 38, 84);
-  background: rgb(248, 249, 252);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, rgb(255, 255, 255)), color-stop(8%, rgb(248, 249, 252)));
+  background: linear-gradient(to top, rgb(255, 255, 255) 8%, rgb(248, 249, 252) 8%);
   overflow: hidden;
 }
 
+@media (max-width: 1199px) {
+  .subscriptions {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, rgb(255, 255, 255)), color-stop(4%, rgb(248, 249, 252)));
+    background: linear-gradient(to top, rgb(255, 255, 255) 4%, rgb(248, 249, 252) 4%);
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions {
+    background: rgb(248, 249, 252);
+  }
+}
 .subscriptions__inner {
   position: relative;
   display: -webkit-box;
@@ -2062,13 +2074,13 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 120px 103px;
+  padding: 120px 103px 190px;
   background: transparent;
 }
 
 @media (max-width: 1199px) {
   .subscriptions__inner {
-    padding: 100px;
+    padding: 100px 100px 170px;
   }
 }
 @media (max-width: 767px) {
@@ -2104,13 +2116,13 @@ button,
 }
 .subscriptions__background {
   position: absolute;
-  bottom: -150px;
+  bottom: -80px;
   right: -184px;
 }
 
 @media (max-width: 1199px) {
   .subscriptions__background {
-    bottom: -124px;
+    bottom: -54px;
     right: -140px;
   }
 }
@@ -2171,6 +2183,12 @@ button,
     line-height: 19px;
   }
 }
+.months-list__item-button--current {
+  color: rgb(16, 38, 84);
+  -webkit-box-shadow: 0 2px 0 rgb(237, 2, 51);
+          box-shadow: 0 2px 0 rgb(237, 2, 51);
+}
+
 .months-list__item-button:hover:not(:disabled),
 .months-list__item-button:focus-visible:not(:disabled) {
   color: rgb(16, 38, 84);
@@ -2381,6 +2399,217 @@ button,
   border: 2px solid rgb(16, 38, 84);
 }
 
+.games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+}
+
+.games__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 50px 20px 90px;
+}
+
+@media (max-width: 1199px) {
+  .games__inner {
+    width: 768px;
+    padding: 29px 45px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .games__inner {
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.games__container-image {
+  width: 660px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .games__container-image {
+    width: 386px;
+    height: 292px;
+  }
+}
+.games-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  width: 500px;
+  margin: 0;
+  padding: 85px 77px 87px;
+  background: rgb(237, 2, 51);
+}
+
+@media (max-width: 1199px) {
+  .games-box {
+    width: 292px;
+    padding: 51px 45px;
+  }
+}
+.games-box__title {
+  margin: 0;
+  padding: 0 0 0 15px;
+  color: rgb(255, 255, 255);
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 82px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .games-box__title {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+  }
+}
+.games-box__text {
+  margin: 24px 0 44px;
+  padding: 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media (max-width: 1199px) {
+  .games-box__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.games-box__button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin: 0;
+  padding: 24px 0;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+.games-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 17px;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1199px) {
+  .games-date {
+    gap: 5px;
+  }
+}
+.games-date__part {
+  margin: 0;
+  padding: 0;
+}
+
+.games-date__part-term {
+  display: block;
+  margin: 0 0 7px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media (max-width: 1199px) {
+  .games-date__part-term {
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.games-date__part-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  margin: 0;
+  padding: 5px 0 0;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 1199px) {
+  .games-date__part-footer {
+    padding-top: 1px;
+  }
+}
+.games-date__part-footer-big-text {
+  margin: 0 5px 0 0;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@media (max-width: 1199px) {
+  .games-date__part-footer-big-text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.games-date__part-footer-small-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1199px) {
+  .games-date__part-footer-small-text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

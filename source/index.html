@@ -215,7 +215,7 @@
         <ol class="months-list">
           <li class="months-list__item">
             <button
-              class="months-list__item-button"
+              class="months-list__item-button months-list__item-button--current"
               type="button"
               aria-label="перейти к выбору программы на один месяц"
             >
@@ -239,7 +239,7 @@
         </ol>
 
         <ol class="program">
-          <li class="program__item">
+          <li class="program__item ">
             <button class="program__item-real-button" type="button">
               <span class="program__item-option">С тренером</span>
               <span class="program__item-term">12 занятий</span>
@@ -348,6 +348,56 @@
               alt="принадлежности для тренировок"
             >
           </picture>
+        </div>
+      </section>
+    </div>
+
+    <div class="games">
+      <section class="games__inner">
+        <div class="games-box">
+          <h2 class="games-box__title">super games</h2>
+          <div class="games-date">
+            <div class="games-date__part">
+              <span class="games-date__part-term">Дата</span>
+              <div class="games-date__part-footer">
+                <span class="games-date__part-footer-big-text">7</span>
+                <span class="games-date__part-footer-small-text">Марта</span>
+                <span class="games-date__part-footer-small-text">2019</span>
+              </div>
+            </div>
+            <div class="games-date__part">
+              <span class="games-date__part-term">Время</span>
+              <div class="games-date__part-footer">
+                <span class="games-date__part-footer-big-text">12:00</span>
+              </div>
+            </div>
+          </div>
+          <span class="games-box__text">Ежегодные соревнования по CrossFit</span>
+          <button class="games-box__button">заполнить заявку</button>
+        </div>
+        <div class="games__container-image">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="img/games/games-image-mobile.jpg 1x, img/games/games-image-mobile@2x.jpg 2x"
+              width="290"
+              height="292"
+            >
+            <source
+              media="(max-width: 1199px)"
+              srcset="img/games/games-image-tablet.jpg 1x, img/games/games-image-tablet@2x.jpg 2x"
+              width="386"
+              height="292"
+            >
+            <img
+              src="img/games/games-image-desktop.jpg"
+              srcset="img/games/games-image-desktop@2x.jpg 2x"
+              width="660"
+              height="500"
+              alt="изображение спортсмена"
+            >
+          </picture>
+
         </div>
       </section>
     </div>
