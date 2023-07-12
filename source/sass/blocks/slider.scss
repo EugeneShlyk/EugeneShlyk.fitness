@@ -8,13 +8,35 @@
 }
 
 .slider__inner {
+  position: relative;
   width: 1200px;
   margin: 0;
   padding: 15px 20px 105px;
 }
 
+@media (max-width: 1199px) {
+  .slider__inner {
+    width: 768px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 49%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider__button-prev {
+  left: -37px;
+}
+
+.slider__button-next {
+  right: -37px;
+}
+
 .slider__title {
-  margin: 0 0 48px;
+  margin: 0 0 49px;
   padding: 0;
   color: rgba(16, 38, 84, 1);
   font-family: "AlumniSans", "Arial", sans-serif;
