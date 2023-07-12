@@ -1,7 +1,5 @@
 .slider-card {
   position: relative;
-  width: 260px;
-  height: 294px;
   margin: 0;
   padding: 0;
 }
@@ -31,6 +29,12 @@
   margin: 0;
   padding: 55px 45px;
   background: rgba(16, 38, 84, 0.89);
+}
+
+@media (max-width: 767px) {
+  .slider-card__info-trainer {
+    padding: 45px 34px;
+  }
 }
 
 .slider-card__info-trainer h3 {
