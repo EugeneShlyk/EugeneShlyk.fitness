@@ -3038,6 +3038,7 @@ button,
   color: rgb(16, 38, 84);
   -webkit-box-shadow: 0 2px 0 rgb(237, 2, 51);
           box-shadow: 0 2px 0 rgb(237, 2, 51);
+  outline: none;
 }
 
 .months-list__item-button:disabled {
@@ -3394,6 +3395,22 @@ button,
     border: 2px solid rgb(255, 255, 255);
   }
 }
+.games-box__button:hover:not(:disabled),
+.games-box__button:focus-visible:not(:disabled) {
+  color: rgb(16, 58, 174);
+  background: rgb(255, 255, 255);
+  outline: none;
+}
+
+.games-box__button:active:not(:disabled) {
+  color: rgb(16, 38, 84);
+}
+
+.games-box__button:disabled {
+  color: rgb(255, 255, 255);
+  border: rgb(255, 255, 255);
+}
+
 .games-date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3511,35 +3528,36 @@ button,
 @media (max-width: 767px) {
   .slider__inner {
     width: 320px;
-    padding: 15px 40px 70px;
+    padding: 15px 40px 68px;
   }
 }
 .slider__button {
   position: absolute;
-  top: 49%;
+  top: 46%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
   cursor: pointer;
   z-index: 10;
+  outline: none;
 }
 
-.slider__button:hover svg {
-  fill: red;
+.slider__button:hover:not(:disabled) svg circle,
+.slider__button:focus-visible:not(:disabled) svg circle {
+  stroke: rgb(16, 38, 84);
 }
 
-.slider__button::before {
-  display: none;
-  content: "";
-  position: absolute;
-  top: -25%;
-  left: -100%;
-  width: 56px;
-  height: 56px;
-  background: red;
-  opacity: 0.2;
+.slider__button:active:not(:disabled) svg circle {
+  fill: rgb(16, 38, 84);
 }
 
-.slider__button:hover + .slider__button::before,
-.slider__button:focus-visible + .slider__button::before {
-  display: block;
+.slider__button:active:not(:disabled) svg path {
+  stroke: rgb(255, 255, 255);
+}
+
+.slider__button:disabled svg path {
+  stroke: #DCDCDC;
 }
 
 @media (max-width: 1199px) {
@@ -3567,7 +3585,7 @@ button,
   }
 }
 .slider__button-prev {
-  left: -37px;
+  left: -55px;
 }
 
 @media (max-width: 1199px) {
@@ -3580,8 +3598,14 @@ button,
     left: 15px;
   }
 }
+.slider__button-next svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .slider__button-next {
-  right: -37px;
+  right: -55px;
 }
 
 @media (max-width: 1199px) {
@@ -3725,6 +3749,59 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: rgb(248, 249, 252);
+}
+
+.advantages__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  margin: 0;
+  padding: 107px 163px 130px;
+}
+
+.advantages__inner h2 {
+  margin: 0 0 55px;
+  padding: 0;
+  color: rgb(16, 38, 84);
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+}
+
+.advantages-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 340px 1fr 340px;
+  grid-template-columns: 340px 1fr 340px;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* @mixin hover-focus {

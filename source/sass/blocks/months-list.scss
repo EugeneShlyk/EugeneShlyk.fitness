@@ -61,6 +61,7 @@
 .months-list__item-button:focus-visible:not(:disabled) {
   color: rgba(16, 38, 84, 1);
   box-shadow: 0 2px 0 rgba(237, 2, 51, 1);
+  outline: none;
 }
 
 .months-list__item-button:disabled {
