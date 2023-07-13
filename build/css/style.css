@@ -3791,7 +3791,7 @@ button,
 @media (max-width: 767px) {
   .advantages__inner {
     width: 320px;
-    padding: 73px 0 70px;
+    padding: 73px 0 63px;
   }
 }
 .advantages__title {
@@ -3815,6 +3815,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages__title {
+    margin-bottom: 53px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -3849,6 +3850,7 @@ button,
   .advantages__list {
     -ms-grid-columns: 320px;
     grid-template-columns: 320px;
+    gap: 43px;
   }
 }
 .advantages__list::before {
@@ -3899,11 +3901,23 @@ button,
     padding-left: 0;
   }
 }
+@media (max-width: 767px) {
+  .advantages-card:nth-child(1),
+.advantages-card:nth-child(4) {
+    padding: 0 68px;
+  }
+}
 .advantages-card:nth-child(3),
 .advantages-card:nth-child(5) {
   padding-right: 10px;
 }
 
+@media (max-width: 767px) {
+  .advantages-card:nth-child(3),
+.advantages-card:nth-child(5) {
+    padding: 0 46px;
+  }
+}
 .advantages-card div {
   display: -ms-grid;
   display: grid;
@@ -3918,6 +3932,20 @@ button,
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .advantages-card div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .advantages-card div div:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3933,6 +3961,11 @@ button,
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .advantages-card div div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
 .advantages-card div div:nth-child(1) span {
   display: block;
   margin: 0;
@@ -3950,6 +3983,11 @@ button,
   .advantages-card div div:nth-child(1) span {
     font-size: 58px;
     line-height: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages-card div div:nth-child(1) span {
+    margin-bottom: 3px;
   }
 }
 .advantages-card div div:nth-child(1) p {
@@ -3993,6 +4031,11 @@ button,
     line-height: 20px;
   }
 }
+@media (max-width: 767px) {
+  .advantages-card div div:nth-child(2) span {
+    margin-bottom: 7px;
+  }
+}
 .advantages-card div div:nth-child(2) p {
   margin: 0;
   padding: 0;
@@ -4002,6 +4045,11 @@ button,
   line-height: 22px;
 }
 
+@media (max-width: 767px) {
+  .advantages-card div div:nth-child(2) p {
+    text-align: center;
+  }
+}
 .advantages-center-card {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -4043,6 +4091,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages-center-card {
+    padding: 42px 72px 42px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -4050,6 +4099,7 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 .advantages-center-card span {
@@ -4060,6 +4110,11 @@ button,
   line-height: 74px;
 }
 
+@media (max-width: 767px) {
+  .advantages-center-card span {
+    line-height: 66px;
+  }
+}
 .advantages-center-card div {
   margin: 0;
   padding: 0;
@@ -4082,6 +4137,11 @@ button,
     margin-bottom: 16px;
   }
 }
+@media (max-width: 767px) {
+  .advantages-center-card div span {
+    margin-bottom: 11px;
+  }
+}
 .advantages-center-card div p {
   display: block;
   margin: 0;
@@ -4089,6 +4149,60 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+}
+
+.discount__inner {
+  width: 1200px;
+  margin: 0;
+  padding: 142px 20px 120px;
+}
+
+.discount__title {
+  margin: 0 0 39px;
+  padding: 0;
+  color: rgb(16, 38, 84);
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+}
+
+.discount__inner-box {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 560px 560px;
+  grid-template-columns: 560px 560px;
+  gap: 40px;
+}
+
+.discount__prime-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 280px 280px;
+  grid-template-columns: 280px 280px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* @mixin hover-focus {

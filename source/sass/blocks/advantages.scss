@@ -25,7 +25,7 @@
 @media (max-width: 767px) {
   .advantages__inner {
     width: 320px;
-    padding: 73px 0 70px;
+    padding: 73px 0 63px;
   }
 }
 
@@ -51,6 +51,7 @@
 
 @media (max-width: 767px) {
   .advantages__title {
+    margin-bottom: 53px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -63,7 +64,6 @@
   grid-template-columns: 340px 240px 340px;
   column-gap: 60px;
   row-gap: 160px;
-  //height: 307px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -80,6 +80,7 @@
 @media (max-width: 767px) {
   .advantages__list {
     grid-template-columns: 320px;
+    gap: 43px;
   }
 }
 
