@@ -8,18 +8,22 @@ export const workSlider = () => {
         nextEl: '.slider__button-next',
         prevEl: '.slider__button-prev',
       },
-      slidesPerView: 4,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1160: {
+          slidesPerView: 4,
+        },
+      },
       spaceBetween: 40,
       loop: true,
+
     });
   }
-  // if (sliderInner.style.width === '768px') {
-  //   Swiper('.slider-wrapper', {
-  //     slidesPerView: 2,
-  //     spaceBetween: 40,
-  //     loop: true,
-  //   });
-  // }
 };
 
 

@@ -84,3 +84,19 @@
     border: 2px solid rgba(255, 255, 255, 1);
   }
 }
+
+.games-box__button:hover:not(:disabled),
+.games-box__button:focus-visible:not(:disabled) {
+  color: rgba(16, 58, 174, 1);
+  background: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.games-box__button:active:not(:disabled) {
+  color: rgba(16, 38, 84, 1);
+}
+
+.games-box__button:disabled {
+  color: rgba(255, 255, 255, 1);
+  border: rgba(255, 255, 255, 1);
+}

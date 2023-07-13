@@ -17,31 +17,137 @@
 @media (max-width: 1199px) {
   .slider__inner {
     width: 768px;
+    padding: 11px 101px 105px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__inner {
+    width: 320px;
+    padding: 15px 40px 68px;
   }
 }
 
 .slider__button {
   position: absolute;
-  top: 49%;
+  top: 46%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
   cursor: pointer;
   z-index: 10;
+  outline: none;
+}
+
+.slider__button:hover:not(:disabled) svg circle,
+.slider__button:focus-visible:not(:disabled) svg circle {
+  stroke: rgba(16, 38, 84, 1);
+}
+
+.slider__button:active:not(:disabled) svg circle {
+    fill: rgba(16, 38, 84, 1);
+}
+
+.slider__button:active:not(:disabled) svg path {
+  stroke: rgba(255, 255, 255, 1);
+}
+
+.slider__button:disabled svg path {
+  stroke: #DCDCDC;
+}
+
+@media (max-width: 1199px) {
+  .slider__button {
+    top: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__button {
+    top: 51%;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__button svg:nth-child(1) {
+    display: none;
+  }
+}
+
+.slider__button svg:nth-child(2) {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .slider__button svg:nth-child(2) {
+    display: block;
+  }
 }
 
 .slider__button-prev {
-  left: -37px;
+  left: -55px;
 }
 
-.slider__button-next {
-  right: -37px;
+@media (max-width: 1199px) {
+  .slider__button-prev {
+    left: 45px;
+  }
 }
 
-.slider__title {
-  margin: 0 0 49px;
-  padding: 0;
-  color: rgba(16, 38, 84, 1);
-  font-family: "AlumniSans", "Arial", sans-serif;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 65px;
-  letter-spacing: 1.62px;
+@media (max-width: 767px) {
+  .slider__button-prev {
+    left: 15px;
+  }
 }
+
+.slider__button-next svg {
+  transform: rotate(180deg);
+}
+
+  .slider__button-next {
+    right: -55px;
+  }
+
+  @media (max-width: 1199px) {
+    .slider__button-next {
+      right: 45px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slider__button-next {
+      right: 15px;
+    }
+  }
+
+  .slider__title {
+    margin: 0 0 49px;
+    padding: 0;
+    color: rgba(16, 38, 84, 1);
+    font-family: "AlumniSans", "Arial", sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 1.62px;
+  }
+
+  @media (max-width: 1199px) {
+    .slider__title {
+      margin-bottom: 31px;
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 1.26px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slider__title {
+      margin-bottom: 42px;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.96px;
+    }
+  }
