@@ -6,9 +6,27 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  padding: 62px 34px 0;
+  padding: 54px 34px 0;
   color: rgba(255, 255, 255, 1);
   background: rgba(28, 51, 116, 1);
+}
+
+@media (max-width: 1199px) {
+  .advantages-center-card {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 442px;
+    margin: 0 auto;
+    padding: 33px 130px 37px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages-center-card {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 100%;
+  }
 }
 
 .advantages-center-card span {
@@ -16,7 +34,7 @@
   padding: 0;
   font-size: 74px;
   font-weight: 700;
-  line-height: 111px;
+  line-height: 74px;
 }
 
 .advantages-center-card div {
@@ -27,11 +45,19 @@
 
 .advantages-center-card div span {
   display: block;
-  margin: 0 0 50px;
+  margin: 0 0 35px;
   padding: 0;
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
+}
+
+@media (max-width: 1199px) {
+  .advantages-center-card div span {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
 }
 
 .advantages-center-card div p {
