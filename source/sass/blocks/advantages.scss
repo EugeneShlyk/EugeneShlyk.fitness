@@ -12,10 +12,10 @@
   align-items: center;
   width: 1200px;
   margin: 0;
-  padding: 107px 163px 130px;
+  padding: 107px 0 130px;
 }
 
-.advantages__inner h2 {
+.advantages__title {
   margin: 0 0 55px;
   padding: 0;
   color: rgba(16, 38, 84, 1);
@@ -24,4 +24,13 @@
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 1.62px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 340px 240px 340px;
+  column-gap: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

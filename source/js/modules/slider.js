@@ -1,5 +1,4 @@
 const swiperContainer = document.querySelector('.swiper-container');
-const sliderInner = document.querySelector('.slider__inner');
 
 export const workSlider = () => {
   if (swiperContainer) {
