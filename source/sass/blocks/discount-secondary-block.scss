@@ -1,0 +1,120 @@
+.discount-secondary-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 24px 28px 28px;
+  color: rgba(28, 51, 116, 1);
+  border: 7px solid;
+  border-image-slice: 1;
+  border-image-source: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
+}
+
+@media (max-width: 767px) {
+  .discount-secondary-block {
+    padding: 34px 55px 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .discount-secondary-block:nth-child(2) {
+    padding: 24px 55px 28px 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .discount-secondary-block:nth-child(2) {
+    padding: 34px 28px 40px;
+  }
+}
+
+.discount-secondary-block span {
+  margin: 0 0 13px;
+  padding: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@media (max-width: 1199px) {
+  .discount-secondary-block span {
+    margin-bottom: 11px;
+  }
+}
+
+.discount-secondary-block p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1199px) {
+  .discount-secondary-block p {
+    margin-bottom: auto;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .discount-secondary-block p {
+    margin-bottom: 27px;
+  }
+}
+
+.discount-secondary-block a {
+  position: relative;
+  align-self: flex-start;
+  margin: auto 0 0;
+  padding: 0;
+  color: rgba(28, 51, 116, 1);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(28, 51, 116, 1);
+}
+
+@media (max-width: 1199px) {
+  .discount-secondary-block a {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .discount-secondary-block a {
+    align-self: center;
+    margin: 0;
+  }
+}
+
+.discount-secondary-block a:hover {
+  color: rgba(16, 38, 84, 0.7);
+  border-bottom: 1px solid rgba(16, 38, 84, 0.7);
+}
+
+.discount-secondary-block a:focus-visible {
+  border-bottom: 1px solid transparent;
+  outline: none;
+}
+
+.discount-secondary-block a:focus-visible:before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -16px;
+  width: 99px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(16, 38, 84, 1);
+}
+
+.discount-secondary-block a:active {
+  color: rgba(28, 51, 116, 1);
+  border-bottom: 1px solid rgba(28, 51, 116, 1);
+}
