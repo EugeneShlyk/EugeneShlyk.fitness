@@ -1,8 +1,8 @@
-const swiperContainer = document.querySelector('.swiper-container');
+const sliderWrapper = document.querySelector('.slider-wrapper');
 
 export const workSlider = () => {
-  if (swiperContainer) {
-    new Swiper('.slider-wrapper', {
+  if (sliderWrapper) {
+    new Swiper('.swiper1', {
       navigation: {
         nextEl: '.slider__button-next',
         prevEl: '.slider__button-prev',
@@ -24,5 +24,4 @@ export const workSlider = () => {
     });
   }
 };
-
 

@@ -1,0 +1,137 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(28, 51, 116, 0.20);
+}
+
+.accordion:not(.accordion--active) {
+  display: none;
+}
+
+.accordion__item {
+  position: relative;
+  margin: 0;
+  padding: 34px 0 24px;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .accordion__item {
+    padding: 21px 0 20px;
+  }
+}
+
+.accordion__item:not(.accordion__item--active) p {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+}
+
+.accordion__item:not(.accordion__item--active) svg:nth-of-type(2) {
+  display: none;
+}
+
+.accordion__item--active svg:nth-of-type(1) {
+  display: none;
+}
+
+.accordion__item:hover circle,
+.accordion__item:focus-visible circle {
+  fill: rgba(16, 38, 84, 1);
+}
+
+.accordion__item:hover path,
+.accordion__item:focus-visible path {
+  stroke: rgba(255, 255, 255, 1);
+}
+
+.accordion__item span {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1199px) {
+  .accordion__item span {
+    width: 560px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion__item span {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.accordion__item p {
+  margin: 9px 0 0;
+  padding: 0;
+  width: 660px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+@media (max-width: 1199px) {
+  .accordion__item p {
+    width: 550px;
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion__item p {
+    margin-top: 0;
+    width: 290px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.accordion__item--active p {
+  margin-top: 18px;
+}
+
+@media (max-width: 1199px) {
+  .accordion__item--active p {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion__item--active p {
+    margin-top: 14px;
+  }
+}
+
+.accordion__item svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+@media (max-width: 1199px) {
+  .accordion__item svg {
+    right: -118px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion__item svg {
+    top: 50%;
+    right: -55px;
+    transform: scale(0.75) translateY(-66%);
+  }
+}
+

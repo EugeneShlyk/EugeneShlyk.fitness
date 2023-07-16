@@ -138,15 +138,15 @@
         </div>
         <div class="gym__inner-video-wrapper">
 
-<!--          <video-->
-<!--            class="gym__inner-video"-->
-<!--            muted-->
-<!--            controls-->
-<!--            preload="metadata"-->
-<!--            playsinline-->
-<!--            width="320"-->
-<!--            src="https://www.youtube.com/results?search_query=%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE+%D0%B2+html+%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F"-->
-<!--          ></video>-->
+          <!--          <video-->
+          <!--            class="gym__inner-video"-->
+          <!--            muted-->
+          <!--            controls-->
+          <!--            preload="metadata"-->
+          <!--            playsinline-->
+          <!--            width="320"-->
+          <!--            src="https://www.youtube.com/results?search_query=%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE+%D0%B2+html+%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F"-->
+          <!--          ></video>-->
 
 
           <!--          <iframe-->
@@ -451,7 +451,7 @@
           </svg>
         </button>
 
-        <div class="slider-wrapper swiper-container">
+        <div class="slider-wrapper swiper-container swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide slider-card">
               <div class="slider-card__image">
@@ -777,10 +777,12 @@
                 <source
                   srcset="img/discount/discount-image-desktop.webp 1x, img/discount/discount-image-desktop@2x.webp 2x"
                   type="image/webp"
+                  width="280"
+                  height="462"
                 >
                 <source
                   media="(max-width: 767px)"
-                  srcset="img/discount/discount-image-mobile.jpg 1x, img/discount/discount-image-mobile@2x.jpg 2x>"
+                  srcset="img/discount/discount-image-mobile.jpg 1x, img/discount/discount-image-mobile@2x.jpg 2x"
                   width="290"
                   height="299"
                 >
@@ -817,66 +819,422 @@
       </section>
     </div>
 
+    <div class="faq">
+      <section class="faq__inner">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <div class="faq__inner-box">
+
+          <ul class="faq-category">
+            <li class="faq-category__item">
+              <button class="faq-category__item-button faq-category__item-button--active" data-tab="tab_1">Центр
+              </button>
+            </li>
+            <li class="faq-category__item">
+              <button class="faq-category__item-button" data-tab="tab_2">Абонемент</button>
+            </li>
+            <li class="faq-category__item">
+              <button class="faq-category__item-button" data-tab="tab_3">Услуги</button>
+            </li>
+            <li class="faq-category__item">
+              <button class="faq-category__item-button" data-tab="tab_4">Правила</button>
+            </li>
+          </ul>
+
+          <div class="accordion accordion--active" id="tab_1">
+            <div class="accordion__item">
+              <span>Как стать членом фитнес-центра?
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                  <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+                </svg>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                  <path d="M30 21H21H12" stroke="#102654"/>
+                </svg>
+              </span>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <span>Где можно посмотреть расписание?
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+
+            </div>
+            <div class="accordion__item">
+              <span>Есть кулеры в центре? Предоставляются полотенца?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+
+            </div>
+            <div class="accordion__item">
+              <span>Сколько тренеров работает в клубе и какова их квалификация?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+
+            </div>
+          </div>
+
+          <div class="accordion" id="tab_2">
+            <div class="accordion__item">
+              <span>Занятия с тренером входят в абонемент?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.</p>
+            </div>
+            <div class="accordion__item">
+              <span>Можно ли заморозить абонемент?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.</p>
+            </div>
+            <div class="accordion__item">
+              <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.</p>
+            </div>
+            <div class="accordion__item">
+              <span>Что такое семейный доступ и доступ для друзей?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                или технике выполнения упражнения.</p>
+            </div>
+          </div>
+
+          <div class="accordion" id="tab_3">
+            <div class="accordion__item">
+              <span>Предлагает ли клуб услуги по консультированию по вопросам питания?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.</p>
+
+            </div>
+            <div class="accordion__item">
+              <span>Проводятся ли в клубе какие-либо мероприятия или соревнования?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.</p>
+            </div>
+            <div class="accordion__item">
+              <span>Можно ли приобрести в центре спортивное питание?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.</p>
+            </div>
+            <div class="accordion__item">
+              <span>Есть ли в центре детская комната?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                данные, цели и предложит программу питания.</p>
+            </div>
+          </div>
+
+          <div class="accordion" id="tab_4">
+            <div class="accordion__item">
+              <span>Есть в фитнес-центре дресс-код?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                исключения составляют специальные классы (например, йога, пилатес).</p>
+            </div>
+            <div class="accordion__item">
+              <span>Можно ли приводить с собой детей на тренировки?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                исключения составляют специальные классы (например, йога, пилатес).</p>
+            </div>
+            <div class="accordion__item">
+              <span>Какие дополнительные правила посещения центра?
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                исключения составляют специальные классы (например, йога, пилатес).</p>
+            </div>
+            <div class="accordion__item">
+              <span>Нужна ли медицинская справка для посещения залов и бассейна?
+               <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
+              </svg>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20.5" fill="none" stroke="#1C3374"/>
+                <path d="M30 21H21H12" stroke="#102654"/>
+              </svg>
+              </span>
+              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
+                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                исключения составляют специальные классы (например, йога, пилатес).</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="comments">
+      <section class="comments__inner">
+        <h2>Отзывы</h2>
+
+        <button class="comments__button comments__button-prev" type="button" aria-label="прокрутка на следующий слайд">
+          <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="29" cy="29" r="28" fill="none" stroke="none"/>
+            <path d="M35 13L19 29L35 45" stroke="#102654"/>
+          </svg>
+        </button>
+
+        <button class="comments__button comments__button-next" type="button" aria-label="прокрутка на предыдущий слайд">
+          <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="29" cy="29" r="28" fill="none" stroke="none"/>
+            <path d="M35 13L19 29L35 45" stroke="#102654"/>
+          </svg>
+        </button>
+
+        <div class="comments__slider swiper-container swiper2">
+          <div class="swiper-wrapper">
+            <div class="comment-card swiper-slide">
+              <img src="img/comment/Ellipse.png" width="80" height="80" alt="наш клиент">
+              <span>Анна Орлова</span>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+            <div class="comment-card swiper-slide">
+              <img src="img/comment/Ellipse.png" width="80" height="80" alt="наш клиент">
+              <span>Анна Орлова</span>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+            <div class="comment-card swiper-slide">
+              <img src="img/comment/Ellipse.png" width="80" height="80" alt="наш клиент">
+              <span>Анна Орлова</span>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="main-footer">
+
+      <div class="free">
+        <form action="https://echo.htmlacademy.ru" method="get">
+
+        </form>
+        <fieldset>
+          <legend class="visually-hidden">Блок отправки формы</legend>
+          <span>Бесплатное занятие</span>
+          <label>
+            <input type="text" placeholder="Имя">
+          </label>
+        </fieldset>
+
+      </div>
+      <div class="address">
+        <span>Контакты</span>
+        <div>
+          <div>
+            <span>Адрес:</span>
+            <p>г. Омск, ул. 60 лет Октября, 7</p>
+            <span>График работы:</span>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+
+          <div>
+            <span>Телефон:</span>
+            <p>8-800-555-55-55</p>
+            <span>Email:</span>
+            <p>omsk@supergym.ru</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
-  <!--    <footer>-->
-  <!--      <div class=" footer
-            ">-->
-  <!--        <div class="footer__inner">-->
+  <!--      <footer>-->
+  <!--        <div class="footer">-->
+  <!--          <div class="footer__inner">-->
 
-  <!--          <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>-->
-  <!--          <a class="footer__item footer__item&#45;&#45;2" href="#" aria-label="переход к разделу">Услуги</a>-->
-  <!--          <a class="footer__item footer__item&#45;&#45;3" href="#" aria-label="переход к разделу">Абонементы</a>-->
-  <!--          <a class="footer__item footer__item&#45;&#45;4" href="#" aria-label="переход к разделу">Акции</a>-->
-  <!--          <a class="footer__item footer__item&#45;&#45;5" href="#" aria-label="переход к разделу">Тренеры</a>-->
-  <!--          <a class="footer__item footer__item&#45;&#45;6" href="#" aria-label="переход к разделу">Расписание</a>-->
+  <!--            <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>-->
+  <!--            <a class="footer__item footer__item&#45;&#45;2" href="#" aria-label="переход к разделу">Услуги</a>-->
+  <!--            <a class="footer__item footer__item&#45;&#45;3" href="#" aria-label="переход к разделу">Абонементы</a>-->
+  <!--            <a class="footer__item footer__item&#45;&#45;4" href="#" aria-label="переход к разделу">Акции</a>-->
+  <!--            <a class="footer__item footer__item&#45;&#45;5" href="#" aria-label="переход к разделу">Тренеры</a>-->
+  <!--            <a class="footer__item footer__item&#45;&#45;6" href="#" aria-label="переход к разделу">Расписание</a>-->
 
-  <!--          <ul class="footer-list">-->
+  <!--            <ul class="footer-list">-->
 
-  <!--            <li class="footer-list__item">-->
-  <!--              <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--                <svg-->
-  <!--                  class="footer-list__item-image"-->
-  <!--                  width="15"-->
-  <!--                  height="15"-->
-  <!--                  aria-hidden="true"-->
-  <!--                >-->
-  <!--                  <use href="img/sprite.svg#vk"></use>-->
-  <!--                </svg>-->
-  <!--              </a>-->
-  <!--            </li>-->
+  <!--              <li class="footer-list__item">-->
+  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
+  <!--                  <svg-->
+  <!--                    class="footer-list__item-image"-->
+  <!--                    width="15"-->
+  <!--                    height="15"-->
+  <!--                    aria-hidden="true"-->
+  <!--                  >-->
+  <!--                    <use href="img/sprite.svg#vk"></use>-->
+  <!--                  </svg>-->
+  <!--                </a>-->
+  <!--              </li>-->
 
-  <!--            <li class="footer-list__item">-->
-  <!--              <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">-->
-  <!--                <svg-->
-  <!--                  class="footer-list__item-image"-->
-  <!--                  width="10"-->
-  <!--                  height="17"-->
-  <!--                  aria-hidden="true"-->
-  <!--                >-->
-  <!--                  <use href="img/sprite.svg#ok"></use>-->
-  <!--                </svg>-->
-  <!--              </a>-->
-  <!--            </li>-->
+  <!--              <li class="footer-list__item">-->
+  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">-->
+  <!--                  <svg-->
+  <!--                    class="footer-list__item-image"-->
+  <!--                    width="10"-->
+  <!--                    height="17"-->
+  <!--                    aria-hidden="true"-->
+  <!--                  >-->
+  <!--                    <use href="img/sprite.svg#ok"></use>-->
+  <!--                  </svg>-->
+  <!--                </a>-->
+  <!--              </li>-->
 
-  <!--            <li class="footer-list__item">-->
-  <!--              <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">-->
-  <!--                <svg-->
-  <!--                  class="footer-list__item-image"-->
-  <!--                  width="23"-->
-  <!--                  height="23"-->
-  <!--                  aria-hidden="true"-->
-  <!--                >-->
-  <!--                  <use href="img/sprite.svg#reddit"></use>-->
-  <!--                </svg>-->
-  <!--              </a>-->
-  <!--            </li>-->
+  <!--              <li class="footer-list__item">-->
+  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">-->
+  <!--                  <svg-->
+  <!--                    class="footer-list__item-image"-->
+  <!--                    width="23"-->
+  <!--                    height="23"-->
+  <!--                    aria-hidden="true"-->
+  <!--                  >-->
+  <!--                    <use href="img/sprite.svg#reddit"></use>-->
+  <!--                  </svg>-->
+  <!--                </a>-->
+  <!--              </li>-->
 
-  <!--          </ul>-->
+  <!--            </ul>-->
 
+  <!--          </div>-->
   <!--        </div>-->
-  <!--      </div>-->
-  <!--    </footer>-->
+  <!--      </footer>-->
 
 </div>
 
