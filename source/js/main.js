@@ -5,6 +5,7 @@ import {workSlider} from './modules/slider.js';
 import {workTabs} from './modules/work-tabs.js';
 import {workAccordion} from './modules/work-accordion.js';
 import {workSliderComments} from './modules/slider-comments.js';
+import {findVideos} from './modules/video.js';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     workTabs();
     workAccordion();
     workSliderComments();
+    findVideos();
   });
 });
 

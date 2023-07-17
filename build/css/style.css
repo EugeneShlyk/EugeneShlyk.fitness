@@ -2964,12 +2964,40 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   pointer-events: none;
+  display: none;
 }
 
-.gym__video-link:hover + .gym__inner-video-button svg .gym__inner-video-button-big-circle,
-.gym__video-link:focus-visible + .gym__inner-video-button svg .gym__inner-video-button-big-circle {
+.gym__inner-video-wrapper--enabled {
+  cursor: pointer;
+}
+
+.gym__inner-video-wrapper--enabled .gym__inner-video-button {
+  display: block;
+}
+
+.gym__video-link:hover + .gym__inner-video-button svg .gym__inner-video-button-big-circle {
   stroke: rgb(16, 38, 84);
   stroke-opacity: 1;
+}
+.gym__video-link:hover + .gym__inner-video-button svg .gym__inner-video-button-small-circle {
+  fill: rgb(255, 255, 255);
+}
+.gym__video-link:hover + .gym__inner-video-button svg .gym__inner-video-button-triangle {
+  fill: rgb(16, 38, 84);
+}
+
+.gym__inner-video-button:focus-visible {
+  outline: none;
+}
+.gym__inner-video-button:focus-visible svg .gym__inner-video-button-big-circle {
+  stroke: rgb(16, 38, 84);
+  stroke-opacity: 1;
+}
+.gym__inner-video-button:focus-visible svg .gym__inner-video-button-small-circle {
+  fill: rgb(255, 255, 255);
+}
+.gym__inner-video-button:focus-visible svg .gym__inner-video-button-triangle {
+  fill: rgb(16, 38, 84);
 }
 
 .subscriptions {
