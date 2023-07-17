@@ -138,82 +138,72 @@
         </div>
         <div class="gym__inner-video-wrapper">
 
-          <!--          <video-->
-          <!--            class="gym__inner-video"-->
-          <!--            muted-->
-          <!--            controls-->
-          <!--            preload="metadata"-->
-          <!--            playsinline-->
-          <!--            width="320"-->
-          <!--            src="https://www.youtube.com/results?search_query=%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE+%D0%B2+html+%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F"-->
-          <!--          ></video>-->
+          <a class="gym__video-link" href="https://www.youtube.com/embed/j8AhvsjCUs8">
+            <picture>
+              <source srcset="https://i.ytimg.com/vi_webp/j8AhvsjCUs8/hqdefault.webp" type="image/webp">
+              <img src="https://i.ytimg.com/vi/j8AhvsjCUs8/hqdefault.jpg" alt="заставка видео">
+
+            </picture>
+          </a>
+
+          <button class="gym__inner-video-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              fill="none"
+            >
+              <circle
+                class="gym__inner-video-button-big-circle"
+                cx="50"
+                cy="50"
+                r="49"
+                stroke="url(#paint0_linear_1_293)"
+                stroke-opacity="0.2"
+                stroke-width="2"
+              />
+              <circle
+                class="gym__inner-video-button-small-circle"
+                cx="50"
+                cy="50"
+                r="36"
+                fill="url(#paint1_linear_1_293)"
+              />
+
+              <path
+                class="gym__inner-video-button-triangle"
+                d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
+                fill="white"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_1_293"
+                  x1="19.774"
+                  y1="3.00672e-05"
+                  x2="105.785"
+                  y2="10.6444"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#ED0233"/>
+                  <stop offset="1" stop-color="#003EB7"/>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_1_293"
+                  x1="14"
+                  y1="49.52"
+                  x2="54.1858"
+                  y2="9.18415"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#003D85"/>
+                  <stop offset="0.885417" stop-color="#B80027"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </button>
 
 
-          <!--          <iframe-->
-          <!--            class="gym__inner-video"-->
-          <!--            width="560"-->
-          <!--            height="315"-->
-          <!--            src="https://www.youtube.com/embed/jhBmZPy02s4"-->
-          <!--            title="YouTube video player"-->
-          <!--            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-          <!--            allowfullscreen-->
-          <!--          ></iframe>-->
-
-          <svg
-            class="gym__inner-video-button"
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 100 100"
-            fill="none"
-          >
-            <circle
-              class="gym__inner-video-button-big-circle"
-              cx="50"
-              cy="50"
-              r="49"
-              stroke="url(#paint0_linear_1_293)"
-              stroke-opacity="0.2"
-              stroke-width="2"
-            />
-            <circle
-              class="gym__inner-video-button-small-circle"
-              cx="50"
-              cy="50"
-              r="36"
-              fill="url(#paint1_linear_1_293)"
-            />
-
-            <path
-              class="gym__inner-video-button-triangle"
-              d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
-              fill="white"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_1_293"
-                x1="19.774"
-                y1="3.00672e-05"
-                x2="105.785"
-                y2="10.6444"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#ED0233"/>
-                <stop offset="1" stop-color="#003EB7"/>
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_1_293"
-                x1="14"
-                y1="49.52"
-                x2="54.1858"
-                y2="9.18415"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#003D85"/>
-                <stop offset="0.885417" stop-color="#B80027"/>
-              </linearGradient>
-            </defs>
-          </svg>
 
         </div>
       </section>
@@ -1142,99 +1132,118 @@
     </div>
 
     <div class="main-footer">
+      <div class="main-footer__left-side">
+        <div class="free">
+          <form action="https://echo.htmlacademy.ru" method="get">
 
-      <div class="free">
-        <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend class="visually-hidden">Блок отправки формы</legend>
+              <span>Бесплатное занятие</span>
+              <div>
+                <div class="custom-input">
+                  <label>
+                    <input type="text" placeholder="Имя">
+                  </label>
+                </div>
 
-        </form>
-        <fieldset>
-          <legend class="visually-hidden">Блок отправки формы</legend>
-          <span>Бесплатное занятие</span>
-          <label>
-            <input type="text" placeholder="Имя">
-          </label>
-        </fieldset>
+                <div class="custom-input">
+                  <label>
+                    <input type="tel" placeholder="Телефон">
+                  </label>
+                </div>
+              </div>
+              <button type="submit">отправить</button>
 
+
+            </fieldset>
+
+          </form>
+        </div>
       </div>
-      <div class="address">
-        <span>Контакты</span>
-        <div>
-          <div>
-            <span>Адрес:</span>
-            <p>г. Омск, ул. 60 лет Октября, 7</p>
-            <span>График работы:</span>
-            <p>Пн-Вс: с 8:00 до 22:00</p>
-          </div>
 
+      <div class="main-footer__right-side">
+        <div class="contacts">
+          <span>Контакты</span>
           <div>
-            <span>Телефон:</span>
-            <p>8-800-555-55-55</p>
-            <span>Email:</span>
-            <p>omsk@supergym.ru</p>
+            <div>
+              <span>Адрес:</span>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+              <span>График работы:</span>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+
+            <div>
+              <span>Телефон:</span>
+              <p>8-800-555-55-55</p>
+              <span>Email:</span>
+              <p>omsk@supergym.ru</p>
+            </div>
           </div>
         </div>
       </div>
+
+
     </div>
 
   </main>
 
-  <!--      <footer>-->
-  <!--        <div class="footer">-->
-  <!--          <div class="footer__inner">-->
+        <footer>
+          <div class="footer">
+            <div class="footer__inner">
 
-  <!--            <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>-->
-  <!--            <a class="footer__item footer__item&#45;&#45;2" href="#" aria-label="переход к разделу">Услуги</a>-->
-  <!--            <a class="footer__item footer__item&#45;&#45;3" href="#" aria-label="переход к разделу">Абонементы</a>-->
-  <!--            <a class="footer__item footer__item&#45;&#45;4" href="#" aria-label="переход к разделу">Акции</a>-->
-  <!--            <a class="footer__item footer__item&#45;&#45;5" href="#" aria-label="переход к разделу">Тренеры</a>-->
-  <!--            <a class="footer__item footer__item&#45;&#45;6" href="#" aria-label="переход к разделу">Расписание</a>-->
+              <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>
+              <a class="footer__item footer__item--2" href="#" aria-label="переход к разделу">Услуги</a>
+              <a class="footer__item footer__item--3" href="#" aria-label="переход к разделу">Абонементы</a>
+              <a class="footer__item footer__item--4" href="#" aria-label="переход к разделу">Акции</a>
+              <a class="footer__item footer__item--5" href="#" aria-label="переход к разделу">Тренеры</a>
+              <a class="footer__item footer__item--6" href="#" aria-label="переход к разделу">Расписание</a>
 
-  <!--            <ul class="footer-list">-->
+              <ul class="footer-list">
 
-  <!--              <li class="footer-list__item">-->
-  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--                  <svg-->
-  <!--                    class="footer-list__item-image"-->
-  <!--                    width="15"-->
-  <!--                    height="15"-->
-  <!--                    aria-hidden="true"-->
-  <!--                  >-->
-  <!--                    <use href="img/sprite.svg#vk"></use>-->
-  <!--                  </svg>-->
-  <!--                </a>-->
-  <!--              </li>-->
+                <li class="footer-list__item">
+                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">
+                    <svg
+                      class="footer-list__item-image"
+                      width="15"
+                      height="15"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
 
-  <!--              <li class="footer-list__item">-->
-  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">-->
-  <!--                  <svg-->
-  <!--                    class="footer-list__item-image"-->
-  <!--                    width="10"-->
-  <!--                    height="17"-->
-  <!--                    aria-hidden="true"-->
-  <!--                  >-->
-  <!--                    <use href="img/sprite.svg#ok"></use>-->
-  <!--                  </svg>-->
-  <!--                </a>-->
-  <!--              </li>-->
+                <li class="footer-list__item">
+                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">
+                    <svg
+                      class="footer-list__item-image"
+                      width="10"
+                      height="17"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
 
-  <!--              <li class="footer-list__item">-->
-  <!--                <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">-->
-  <!--                  <svg-->
-  <!--                    class="footer-list__item-image"-->
-  <!--                    width="23"-->
-  <!--                    height="23"-->
-  <!--                    aria-hidden="true"-->
-  <!--                  >-->
-  <!--                    <use href="img/sprite.svg#reddit"></use>-->
-  <!--                  </svg>-->
-  <!--                </a>-->
-  <!--              </li>-->
+                <li class="footer-list__item">
+                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">
+                    <svg
+                      class="footer-list__item-image"
+                      width="23"
+                      height="23"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#reddit"></use>
+                    </svg>
+                  </a>
+                </li>
 
-  <!--            </ul>-->
+              </ul>
 
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--      </footer>-->
+            </div>
+          </div>
+        </footer>
 
 </div>
 

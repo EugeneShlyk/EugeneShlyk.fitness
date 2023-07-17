@@ -1,13 +1,27 @@
 .free {
   width: 600px;
-  margin: 0;
-  padding: 56px 170px 70px 20px;
-  color: rgba(255, 255, 255, 1);
-  background: rgba(16, 38, 84, 1);
+  margin: 0 0 0 auto;
+  padding: 56px 170px 63px 20px;
+}
+
+@media (max-width: 1199px) {
+  .free {
+    width: 768px;
+    margin: 0 auto;
+    padding: 63px 163px 69px 133px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free {
+    width: 320px;
+    padding: 63px 15px 69px;
+  }
 }
 
 .free span {
-  margin: 0 0 34px;
+  display: block;
+  margin: 0 0 10px;
   padding: 0;
   font-family: "AlumniSans", "Arial", sans-serif;
   font-size: 54px;
@@ -16,20 +30,74 @@
   letter-spacing: 1.62px;
 }
 
+@media (max-width: 1199px) {
+  .free span {
+    margin-bottom: 27px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free span {
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+  }
+}
+
 .free fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.free input {
+.free fieldset > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .free fieldset > div {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free fieldset > div {
+    flex-direction: column;
+    margin-bottom: 21px;
+  }
+}
+
+.free fieldset button {
+  width: 100%;
   margin: 0;
-  padding: 10px 0;
+  padding: 17px 0;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16px;
   background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(116, 129, 156, 1);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  border: 3px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .free fieldset button {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .free fieldset button {
+  }
 }
