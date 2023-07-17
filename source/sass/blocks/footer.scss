@@ -13,15 +13,22 @@
   align-items: center;
   width: 1200px;
   margin: 0;
-  padding: 26px 18px 30px 13px;
+  padding: 27px 18px 30px 13px;
 }
 
 @media (max-width: 1199px) {
   .footer__inner {
     width: 768px;
-    padding: 29px 40px 29px 35px;
+    padding: 29px 40px 37px 35px;
   }
 }
+
+//@include vp-1365 {
+//  .footer__inner {
+//    width: 768px;
+//    padding: 29px 40px 29px 35px;
+//  }
+//}
 
 @media (max-width: 767px) {
   .footer__inner {

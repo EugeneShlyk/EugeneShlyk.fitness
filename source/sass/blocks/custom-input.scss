@@ -56,77 +56,83 @@
       &:focus:not(:disabled) {
         border: 1px solid rgba(255, 255, 255, 1);
       }
-    }
 
-    input::placeholder {
-      color: rgba(255, 255, 255, 1);
-    }
+      &::placeholder {
+        color: rgba(255, 255, 255, 1);
+      }
 
-    input:disabled::placeholder {
-      color: rgba(255, 255, 255, 0.4);
-    }
+      &:disabled::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
 
-    input:disabled {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-  }
+      &:disabled {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
 
-  &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
-    }
-  }
-
-  &__error {
-    position: absolute;
-    right: 0;
-    bottom: 35px;
-
-    color: #ff1553;
-
-    opacity: 0;
-
-    transition: opacity 0.3s ease;
-
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
-    }
-  }
-
-  &.is-invalid {
-    input,
-    textarea {
-      border: 2px solid #ff1553;
-
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+      &:invalid:not(:placeholder-shown) {
+        border-bottom: 1px solid rgba(255, 61, 61, 1);
       }
     }
+
+
   }
 
-  &.is-valid {
-    input {
-      border: 2px solid #22b259;
+  //&__label {
+  //  @media screen and (max-width: 767px) {
+  //    margin: 0 0 18px 0;
+  //  }
+  //}
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
-      }
-    }
-  }
+  //&__error {
+  //  position: absolute;
+  //  right: 0;
+  //  bottom: 35px;
+  //
+  //  color: #ff1553;
+  //
+  //  opacity: 0;
+  //
+  //  transition: opacity 0.3s ease;
+  //
+  //  @media screen and (max-width: 767px) {
+  //    bottom: 20px;
+  //  }
+  //}
 
-  .input-message {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
-    }
-  }
+  //&.is-invalid {
+  //  input,
+  //  textarea {
+  //    border: 2px solid #ff1553;
+  //
+  //    &:focus,
+  //    &:hover {
+  //      border: 2px solid rgba(#ff1553, 0.5);
+  //    }
+  //  }
+  //}
+  //
+  //&.is-valid {
+  //  input {
+  //    border: 2px solid #22b259;
+  //
+  //    &:focus,
+  //    &:hover {
+  //      border: 2px solid rgba(#22b259, 0.5);
+  //    }
+  //  }
+  //}
+  //
+  //.input-message {
+  //  position: absolute;
+  //  right: 0;
+  //  bottom: -5px;
+  //
+  //  &.is-invalid {
+  //    color: #ff0000;
+  //  }
+  //
+  //  &.is-valid {
+  //    color: #15ab07;
+  //  }
+  //}
 }

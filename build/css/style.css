@@ -1659,101 +1659,59 @@ button,
 .custom-textarea label textarea:focus:not(:disabled) {
   border: 1px solid rgb(255, 255, 255);
 }
-.custom-input label input::-webkit-input-placeholder, .custom-textarea label input::-webkit-input-placeholder {
+.custom-input label input::-webkit-input-placeholder, .custom-input label textarea::-webkit-input-placeholder, .custom-textarea label input::-webkit-input-placeholder, .custom-textarea label textarea::-webkit-input-placeholder {
   color: rgb(255, 255, 255);
 }
-.custom-input label input::-moz-placeholder, .custom-textarea label input::-moz-placeholder {
+.custom-input label input::-moz-placeholder, .custom-input label textarea::-moz-placeholder, .custom-textarea label input::-moz-placeholder, .custom-textarea label textarea::-moz-placeholder {
   color: rgb(255, 255, 255);
 }
-.custom-input label input:-ms-input-placeholder, .custom-textarea label input:-ms-input-placeholder {
+.custom-input label input:-ms-input-placeholder, .custom-input label textarea:-ms-input-placeholder, .custom-textarea label input:-ms-input-placeholder, .custom-textarea label textarea:-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
-.custom-input label input::-ms-input-placeholder, .custom-textarea label input::-ms-input-placeholder {
+.custom-input label input::-ms-input-placeholder, .custom-input label textarea::-ms-input-placeholder, .custom-textarea label input::-ms-input-placeholder, .custom-textarea label textarea::-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
 .custom-input label input::placeholder,
-.custom-textarea label input::placeholder {
+.custom-input label textarea::placeholder,
+.custom-textarea label input::placeholder,
+.custom-textarea label textarea::placeholder {
   color: rgb(255, 255, 255);
 }
-.custom-input label input:disabled::-webkit-input-placeholder, .custom-textarea label input:disabled::-webkit-input-placeholder {
+.custom-input label input:disabled::-webkit-input-placeholder, .custom-input label textarea:disabled::-webkit-input-placeholder, .custom-textarea label input:disabled::-webkit-input-placeholder, .custom-textarea label textarea:disabled::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
-.custom-input label input:disabled::-moz-placeholder, .custom-textarea label input:disabled::-moz-placeholder {
+.custom-input label input:disabled::-moz-placeholder, .custom-input label textarea:disabled::-moz-placeholder, .custom-textarea label input:disabled::-moz-placeholder, .custom-textarea label textarea:disabled::-moz-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
-.custom-input label input:disabled:-ms-input-placeholder, .custom-textarea label input:disabled:-ms-input-placeholder {
+.custom-input label input:disabled:-ms-input-placeholder, .custom-input label textarea:disabled:-ms-input-placeholder, .custom-textarea label input:disabled:-ms-input-placeholder, .custom-textarea label textarea:disabled:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
-.custom-input label input:disabled::-ms-input-placeholder, .custom-textarea label input:disabled::-ms-input-placeholder {
+.custom-input label input:disabled::-ms-input-placeholder, .custom-input label textarea:disabled::-ms-input-placeholder, .custom-textarea label input:disabled::-ms-input-placeholder, .custom-textarea label textarea:disabled::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 .custom-input label input:disabled::placeholder,
-.custom-textarea label input:disabled::placeholder {
+.custom-input label textarea:disabled::placeholder,
+.custom-textarea label input:disabled::placeholder,
+.custom-textarea label textarea:disabled::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 .custom-input label input:disabled,
-.custom-textarea label input:disabled {
+.custom-input label textarea:disabled,
+.custom-textarea label input:disabled,
+.custom-textarea label textarea:disabled {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-@media screen and (max-width: 767px) {
-  .custom-input__label,
-.custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
+.custom-input label input:invalid:not(:-moz-placeholder-shown), .custom-input label textarea:invalid:not(:-moz-placeholder-shown), .custom-textarea label input:invalid:not(:-moz-placeholder-shown), .custom-textarea label textarea:invalid:not(:-moz-placeholder-shown) {
+  border-bottom: 1px solid rgb(255, 61, 61);
 }
-.custom-input__error,
-.custom-textarea__error {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  color: #ff1553;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+.custom-input label input:invalid:not(:-ms-input-placeholder), .custom-input label textarea:invalid:not(:-ms-input-placeholder), .custom-textarea label input:invalid:not(:-ms-input-placeholder), .custom-textarea label textarea:invalid:not(:-ms-input-placeholder) {
+  border-bottom: 1px solid rgb(255, 61, 61);
 }
-@media screen and (max-width: 767px) {
-  .custom-input__error,
-.custom-textarea__error {
-    bottom: 20px;
-  }
-}
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
-}
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
-}
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
-}
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
-}
-.custom-input .input-message,
-.custom-textarea .input-message {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-}
-.custom-input .input-message.is-invalid,
-.custom-textarea .input-message.is-invalid {
-  color: #ff0000;
-}
-.custom-input .input-message.is-valid,
-.custom-textarea .input-message.is-valid {
-  color: #15ab07;
+.custom-input label input:invalid:not(:placeholder-shown),
+.custom-input label textarea:invalid:not(:placeholder-shown),
+.custom-textarea label input:invalid:not(:placeholder-shown),
+.custom-textarea label textarea:invalid:not(:placeholder-shown) {
+  border-bottom: 1px solid rgb(255, 61, 61);
 }
 
 .custom-toggle {
@@ -2534,13 +2492,13 @@ button,
           align-items: center;
   width: 1200px;
   margin: 0;
-  padding: 26px 18px 30px 13px;
+  padding: 27px 18px 30px 13px;
 }
 
 @media (max-width: 1199px) {
   .footer__inner {
     width: 768px;
-    padding: 29px 40px 29px 35px;
+    padding: 29px 40px 37px 35px;
   }
 }
 @media (max-width: 767px) {
@@ -2967,6 +2925,13 @@ button,
   display: none;
 }
 
+@media (max-width: 767px) {
+  .gym__inner-video-button {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
 .gym__inner-video-wrapper--enabled {
   cursor: pointer;
 }
@@ -5306,6 +5271,22 @@ button,
   cursor: pointer;
 }
 
+.free fieldset button:hover:not(:disabled),
+.free fieldset button:focus-visible:not(:disabled) {
+  color: rgb(16, 58, 174);
+  background: rgb(255, 255, 255);
+}
+
+.free fieldset button:active:not(:disabled) {
+  color: rgb(16, 38, 84);
+}
+
+.free fieldset button:disabled {
+  color: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  cursor: auto;
+}
+
 @media (max-width: 1199px) {
   .free fieldset button {
     padding: 16px 0;
@@ -5321,7 +5302,7 @@ button,
   .contacts {
     width: 768px;
     margin: 0 auto;
-    padding: 63px 0 44px 85px;
+    padding: 63px 0 46px 85px;
   }
 }
 @media (max-width: 767px) {
@@ -5436,7 +5417,7 @@ button,
   }
 }
 .contacts div div p {
-  margin: 0 0 19px;
+  margin: 0 0 18px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;

@@ -8,7 +8,7 @@
   .contacts {
     width: 768px;
     margin: 0 auto;
-    padding: 63px 0 44px 85px;
+    padding: 63px 0 46px 85px;
   }
 }
 
@@ -136,7 +136,7 @@
 }
 
 .contacts div div p {
-  margin: 0 0 19px;
+  margin: 0 0 18px;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -145,6 +145,7 @@
 
 @media (max-width: 1199px) {
   .contacts div div p {
+    //margin-bottom: 17px;
     font-size: 18px;
     line-height: 27px;
   }

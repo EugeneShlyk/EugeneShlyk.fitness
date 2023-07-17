@@ -91,13 +91,25 @@
   cursor: pointer;
 }
 
+.free fieldset button:hover:not(:disabled),
+.free fieldset button:focus-visible:not(:disabled) {
+  color: rgba(16, 58, 174, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.free fieldset button:active:not(:disabled) {
+  color: rgba(16, 38, 84, 1);
+}
+
+.free fieldset button:disabled {
+  color: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  cursor: auto;
+}
+
 @media (max-width: 1199px) {
   .free fieldset button {
     padding: 16px 0;
   }
 }
 
-@media (max-width: 767px) {
-  .free fieldset button {
-  }
-}

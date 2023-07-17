@@ -233,6 +233,12 @@
   display: none;
 }
 
+@media (max-width: 767px) {
+  .gym__inner-video-button {
+    transform: scale(0.8);
+  }
+}
+
 .gym__inner-video-wrapper--enabled {
   cursor: pointer;
 }
@@ -272,5 +278,3 @@
     fill: rgba(16, 38, 84, 1);
   }
 }
-
-//.gym__video-link:active
