@@ -43,9 +43,13 @@
             </div>
             <span class="hero__city">омск</span>
             <h1 class="hero__title">Фитнес центр</h1>
-            <button class="hero__subscription" type="button" aria-label="на страницу оформления покупки абонемента">
+            <a
+              class="hero__subscription"
+              href="#subscriptions"
+              aria-label="скрол страницы до раздела оформления покупки абонемента"
+            >
               Купить абонемент
-            </button>
+            </a>
           </div>
           <div class="hero__image-wrapper">
             <picture>
@@ -204,12 +208,11 @@
           </button>
 
 
-
         </div>
       </section>
     </div>
 
-    <div class="subscriptions">
+    <div class="subscriptions" id="subscriptions">
       <section class="subscriptions__inner">
         <h2 class="subscriptions__title">Абонементы</h2>
 
@@ -218,6 +221,7 @@
             <button
               class="months-list__item-button months-list__item-button--current"
               type="button"
+              data-tab="tab_1sub"
               aria-label="перейти к выбору программы на один месяц"
             >
               <span aria-hidden="true">1 месяц</span>
@@ -227,21 +231,27 @@
             <button
               class="months-list__item-button"
               type="button"
+              data-tab="tab_2sub"
               aria-label="перейти к выбору программы на шесть месяцев"
             >
               <span aria-hidden="true">6 месяцев</span>
             </button>
           </li>
           <li class="months-list__item">
-            <button class="months-list__item-button" type="button" aria-label="перейти к выбору программы на год">
+            <button
+              class="months-list__item-button"
+              type="button"
+              data-tab="tab_3sub"
+              aria-label="перейти к выбору программы на год"
+            >
               <span aria-hidden="true">12 месяцев</span>
             </button>
           </li>
         </ol>
 
-        <ol class="program">
-          <li class="program__item ">
-            <button class="program__item-real-button" type="button">
+        <ol class="program program__active" id="tab_1sub">
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
               <span class="program__item-option">С тренером</span>
               <span class="program__item-term">12 занятий</span>
               <span class="program__price-block">
@@ -265,10 +275,10 @@
                 </svg>
               </span>
               <span class="program__item-button">купить абонемент</span>
-            </button>
+            </a>
           </li>
           <li class="program__item">
-            <button class="program__item-real-button" type="button">
+            <a class="program__item-real-button" href="#">
               <span class="program__item-option">Дневной</span>
               <span class="program__item-term">с 8:00 до 17:00 </span>
               <span class="program__price-block">
@@ -292,10 +302,10 @@
                 </svg>
               </span>
               <span class="program__item-button">купить абонемент</span>
-            </button>
+            </a>
           </li>
           <li class="program__item">
-            <button class="program__item-real-button" type="button">
+            <a class="program__item-real-button" href="#">
               <span class="program__item-option">Полный день</span>
               <span class="program__item-term">с 8:00 до 17:00 </span>
               <span class="program__price-block">
@@ -319,9 +329,178 @@
                 </svg>
               </span>
               <span class="program__item-button">купить абонемент</span>
-            </button>
+            </a>
           </li>
         </ol>
+
+        <ol class="program" id="tab_2sub">
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">С тренером</span>
+              <span class="program__item-term">12 занятий</span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">30000</span>
+                <span class="program__item-price">30000</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">Дневной</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">10200</span>
+                <span class="program__item-price">10200</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">Полный день</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">16200</span>
+                <span class="program__item-price">16200</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+        </ol>
+
+        <ol class="program" id="tab_3sub">
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">С тренером</span>
+              <span class="program__item-term">12 занятий</span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">60000</span>
+                <span class="program__item-price">60000</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">Дневной</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">20400</span>
+                <span class="program__item-price">20400</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+          <li class="program__item">
+            <a class="program__item-real-button" href="#">
+              <span class="program__item-option">Полный день</span>
+              <span class="program__item-term">с 8:00 до 17:00 </span>
+              <span class="program__price-block">
+                <span class="program__item-price-shadow">32400</span>
+                <span class="program__item-price">32400</span>
+                <svg
+                  class="program__item-ruble"
+                  width="30"
+                  height="42"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble"></use>
+                </svg>
+                <svg
+                  class="program__item-ruble-mini"
+                  width="24"
+                  height="33"
+                  aria-hidden="true"
+                >
+                  <use href="img/sprite.svg#ruble-mini"></use>
+                </svg>
+              </span>
+              <span class="program__item-button">купить абонемент</span>
+            </a>
+          </li>
+        </ol>
+
         <div class="subscriptions__background">
           <picture>
             <source
@@ -1186,64 +1365,64 @@
 
   </main>
 
-        <footer>
-          <div class="footer">
-            <div class="footer__inner">
+  <footer>
+    <div class="footer">
+      <div class="footer__inner">
 
-              <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>
+        <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>
 
-              <a class="footer__item footer__item--2" href="#" aria-label="переход к разделу">Услуги</a>
-              <a class="footer__item footer__item--3" href="#" aria-label="переход к разделу">Абонементы</a>
-              <a class="footer__item footer__item--4" href="#" aria-label="переход к разделу">Акции</a>
-              <a class="footer__item footer__item--5" href="#" aria-label="переход к разделу">Тренеры</a>
-              <a class="footer__item footer__item--6" href="#" aria-label="переход к разделу">Расписание</a>
+        <a class="footer__item footer__item--2" href="#" aria-label="переход к разделу">Услуги</a>
+        <a class="footer__item footer__item--3" href="#" aria-label="переход к разделу">Абонементы</a>
+        <a class="footer__item footer__item--4" href="#" aria-label="переход к разделу">Акции</a>
+        <a class="footer__item footer__item--5" href="#" aria-label="переход к разделу">Тренеры</a>
+        <a class="footer__item footer__item--6" href="#" aria-label="переход к разделу">Расписание</a>
 
-              <ul class="footer-list">
+        <ul class="footer-list">
 
-                <li class="footer-list__item">
-                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">
-                    <svg
-                      class="footer-list__item-image"
-                      width="15"
-                      height="15"
-                      aria-hidden="true"
-                    >
-                      <use href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
+          <li class="footer-list__item">
+            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта в контакте">
+              <svg
+                class="footer-list__item-image"
+                width="15"
+                height="15"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
 
-                <li class="footer-list__item">
-                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">
-                    <svg
-                      class="footer-list__item-image"
-                      width="10"
-                      height="17"
-                      aria-hidden="true"
-                    >
-                      <use href="img/sprite.svg#ok"></use>
-                    </svg>
-                  </a>
-                </li>
+          <li class="footer-list__item">
+            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта одноклассники">
+              <svg
+                class="footer-list__item-image"
+                width="10"
+                height="17"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
 
-                <li class="footer-list__item">
-                  <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">
-                    <svg
-                      class="footer-list__item-image"
-                      width="23"
-                      height="23"
-                      aria-hidden="true"
-                    >
-                      <use href="img/sprite.svg#reddit"></use>
-                    </svg>
-                  </a>
-                </li>
+          <li class="footer-list__item">
+            <a class="footer-list__item-link" href="#" aria-label="переход на страницу сайта reddit">
+              <svg
+                class="footer-list__item-image"
+                width="23"
+                height="23"
+                aria-hidden="true"
+              >
+                <use href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
 
-              </ul>
+        </ul>
 
-            </div>
-          </div>
-        </footer>
+      </div>
+    </div>
+  </footer>
 
 </div>
 

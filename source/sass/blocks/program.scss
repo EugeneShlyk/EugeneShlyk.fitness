@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+.program:not(.program__active) {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .program {
     grid-template-columns: 442px;
@@ -103,7 +107,7 @@
 .program__price-block {
   position: relative;
   display: block;
-  margin: 0 0 54px;
+  margin: 0 0 51px;
   padding: 0;
 }
 
@@ -191,4 +195,5 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border: 2px solid rgba(16, 38, 84, 1);
+  text-align: center;
 }

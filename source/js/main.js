@@ -6,6 +6,7 @@ import {workTabs} from './modules/work-tabs.js';
 import {workAccordion} from './modules/work-accordion.js';
 import {workSliderComments} from './modules/slider-comments.js';
 import {findVideos} from './modules/video.js';
+import {subscribe} from './modules/subscription.js';
 
 // ---------------------------------
 
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    subscribe();
     workSlider();
     workTabs();
     workAccordion();
