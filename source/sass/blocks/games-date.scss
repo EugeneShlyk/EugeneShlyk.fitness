@@ -19,7 +19,7 @@
   padding: 0;
 }
 
-.games-date__part-term {
+.games-date__part > span {
   display: block;
   margin: 0 0 7px;
   font-size: 18px;
@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 1199px) {
-  .games-date__part-term {
+  .games-date__part > span {
     margin-bottom: 2px;
     font-size: 12px;
     line-height: 14px;
@@ -49,7 +49,7 @@
   }
 }
 
-.games-date__part-footer-big-text {
+.games-date__part-footer p {
   margin: 0 5px 0 0;
   grid-row: 1 / 3;
   font-size: 40px;
@@ -58,20 +58,20 @@
 }
 
 @media (max-width: 1199px) {
-  .games-date__part-footer-big-text {
+  .games-date__part-footer p {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
-.games-date__part-footer-small-text {
+.games-date__part-footer span {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 }
 
 @media (max-width: 1199px) {
-  .games-date__part-footer-small-text {
+  .games-date__part-footer span {
     font-size: 10px;
     line-height: 12px;
   }

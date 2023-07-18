@@ -5,7 +5,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  //background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23633825778961deg, #b80027 304deg, #003d85 360deg) center / 100% 100% no-repeat;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.23633825778961deg, #b80027 304deg, #003d85 360deg) center / 100% 100% no-repeat;
 }
 
 .hero__inner {
@@ -118,7 +118,7 @@
   }
 }
 
-.hero__city {
+.hero__box span {
   margin: 0 0 12px;
   padding: 0 51px 0 0;
   color: rgba(255, 255, 255, 1);
@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 1199px) {
-  .hero__city {
+  .hero__box span {
     margin-bottom: 4px;
     padding: 0;
     font-size: 34px;
@@ -141,7 +141,7 @@
 }
 
 @media (max-width: 767px) {
-  .hero__city {
+  .hero__box span {
     position: relative;
     left: -10px;
     margin-bottom: 14px;
@@ -151,7 +151,7 @@
   }
 }
 
-.hero__title {
+.hero__box h1 {
   margin: 0 0 45px;
   padding: 0;
   color: rgba(255, 255, 255, 1);
@@ -166,7 +166,7 @@
 }
 
 @media (max-width: 1199px) {
-  .hero__title {
+  .hero__box h1 {
     margin-bottom: 36px;
     font-size: 72px;
     font-weight: 600;
@@ -177,14 +177,14 @@
 }
 
 @media (max-width: 767px) {
-  .hero__title {
+  .hero__box h1 {
     position: relative;
     left: -10px;
     margin-bottom: 20px;
   }
 }
 
-.hero__subscription {
+.hero__box a {
   display: block;
   width: 230px;
   height: 61px;
@@ -204,30 +204,30 @@
 }
 
 @media (max-width: 1199px) {
-  .hero__subscription {
+  .hero__box a {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-  .hero__subscription {
+  .hero__box a {
     grid-column: 1 / 3;
     height: 63px;
   }
 }
 
-.hero__subscription:hover:not(:disabled),
-.hero__subscription:focus-visible:not(:disabled) {
+.hero__box a:hover:not(:disabled),
+.hero__box a:focus-visible:not(:disabled) {
   color: rgba(16, 58, 174, 1);
   background: rgba(255, 255, 255, 1);
   outline: none;
 }
 
-.hero__subscription:active:not(:disabled) {
+.hero__box a:active:not(:disabled) {
   color: rgba(16, 38, 84, 1);
 }
 
-.hero__subscription:disabled {
+.hero__box a:disabled {
   cursor: auto;
   color: rgba(255, 255, 255, 0.5);
   border: 4px solid rgba(255, 255, 255, 0.5);
