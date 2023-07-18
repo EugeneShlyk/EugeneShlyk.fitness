@@ -13,29 +13,33 @@
   align-items: center;
   width: 1200px;
   margin: 0;
-  padding: 27px 18px 30px 13px;
+  padding: 27px 18px 31px 13px;
 }
 
 @media (max-width: 1199px) {
   .footer__inner {
+    gap: 0;
     width: 768px;
     padding: 29px 40px 37px 35px;
   }
 }
 
-//@include vp-1365 {
+//@media (max-width: 767px) {
 //  .footer__inner {
-//    width: 768px;
-//    padding: 29px 40px 29px 35px;
+//    width: 320px;
+//    grid-template-columns: 1fr 1fr;
+//    column-gap: 30px;
+//    padding: 38px 10px 47px;
 //  }
 //}
 
 @media (max-width: 767px) {
   .footer__inner {
     width: 320px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    padding: 38px 10px 47px;
+    display: block;
+    gap: 25px;
+    padding: 40px 10px 51px;
+    column-count: 2;
   }
 }
 
@@ -63,7 +67,8 @@
 
 @media (max-width: 767px) {
   .footer__logo {
-    padding: 7px 10px 7px 5px;
+    display: block;
+    padding: 5px 10px 13px 5px;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -72,15 +77,29 @@
 }
 
 .footer__item {
-  height: 32px;
   box-sizing: border-box;
   margin: 0;
-  padding: 9px 10px;
+  padding: 15px 10px;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   border: 1px solid rgba(3, 10, 26, 1);
+}
+
+@media (max-width: 1199px) {
+  .footer__item {
+    padding: 15px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__item {
+    display: block;
+    padding: 5px 5px 15px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .footer__item:hover {
@@ -92,38 +111,24 @@
   outline: none;
 }
 
-@media (max-width: 1199px) {
-  .footer__item {
-    padding: 20px 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer__item {
-    padding: 11px 5px;
-    font-size: 16px;
-    line-height: 19px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer__item--2 {
-    order: 3;
-  }
-
-  .footer__item--3 {
-    order: 5;
-  }
-
-  .footer__item--4 {
-    order: 2;
-  }
-
-  .footer__item--5 {
-    order: 4;
-  }
-
-  .footer__item--6 {
-    order: 6;
-  }
-}
+//@media (max-width: 767px) {
+//  .footer__item--2 {
+//    order: 3;
+//  }
+//
+//  .footer__item--3 {
+//    order: 5;
+//  }
+//
+//  .footer__item--4 {
+//    order: 2;
+//  }
+//
+//  .footer__item--5 {
+//    order: 4;
+//  }
+//
+//  .footer__item--6 {
+//    order: 6;
+//  }
+//}

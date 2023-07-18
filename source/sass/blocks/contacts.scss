@@ -15,7 +15,7 @@
 @media (max-width: 767px) {
   .contacts {
     width: 320px;
-    padding: 64px 15px 43px;
+    padding: 64px 15px 47px;
   }
 }
 
@@ -66,15 +66,15 @@
   }
 }
 
-//.contacts > div::after {
-//  content: "";
-//  position: absolute;
-//  top: 0;
-//  left: 300px;
-//  width: 1px;
-//  height: 100%;
-//  background: rgba(116, 129, 156, 1);
-//}
+.contacts > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 1px;
+  height: 100%;
+  background: rgba(116, 129, 156, 1);
+}
 
 @media (max-width: 1199px) {
   .contacts > div::after {

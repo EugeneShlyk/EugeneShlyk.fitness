@@ -8,9 +8,9 @@
 
 @media (max-width: 767px) {
   .footer-list {
-    order: 7;
-    padding-top: 20px;
+    column-span: all;
     justify-content: start;
+    padding-top: 15px;
   }
 }
 
