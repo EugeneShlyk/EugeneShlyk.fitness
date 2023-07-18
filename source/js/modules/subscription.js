@@ -10,7 +10,7 @@ export const subscribe = () => {
       // Получаем предыдущую активную кнопку
       const prevActiveButton = document.querySelector('.months-list__item-button--current');
       // Получаем предыдущую активную вкладку
-      const prevActiveItem = document.querySelector('.program__active');
+      const prevActiveItem = document.querySelector('.program--active');
 
       // Проверяем есть или нет предыдущая активная кнопка
       if (prevActiveButton) {
@@ -21,7 +21,7 @@ export const subscribe = () => {
       // Проверяем есть или нет предыдущая активная вкладка
       if (prevActiveItem) {
         // Удаляем класс _active у предыдущей вкладки если она есть
-        prevActiveItem.classList.remove('program__active');
+        prevActiveItem.classList.remove('program--active');
       }
       // получаем id новой активной вкладки, который мы берем из атрибута data-tab у кнопки
       const nextActiveItemId = `#${btn.getAttribute('data-tab')}`;
@@ -31,7 +31,7 @@ export const subscribe = () => {
       // добавляем класс _active кнопке на которую нажали
       btn.classList.add('months-list__item-button--current');
       // добавляем класс _active новой выбранной вкладке
-      nextActiveItem.classList.add('program__active');
+      nextActiveItem.classList.add('program--active');
     });
   });
 };

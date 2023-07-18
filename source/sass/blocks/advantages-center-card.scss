@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-.advantages-center-card div span {
+.advantages-center-card__inner span {
   display: block;
   margin: 0 0 35px;
   padding: 0;
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 1199px) {
-  .advantages-center-card div span {
+  .advantages-center-card__inner span {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 16px;
@@ -69,12 +69,12 @@
 }
 
 @media (max-width: 767px) {
-  .advantages-center-card div span {
+  .advantages-center-card__inner span {
     margin-bottom: 11px;
   }
 }
 
-.advantages-center-card div p {
+.advantages-center-card__inner p {
   display: block;
   margin: 0;
   padding: 0;

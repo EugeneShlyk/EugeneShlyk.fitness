@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт об услугах фитнес центра">
   <title>fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -88,14 +88,14 @@
     <div class="gym">
       <section class="gym__inner">
         <div class="gym__inner-box">
-          <div>
+          <div class="gym__inner-box-inner">
             <h2>Тренажерный зал</h2>
             <span>Просторный зал площадью 900 кв/м</span>
           </div>
           <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p><span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий.</span></p>
+          <span>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.</span>
         </div>
         <div class="gym__inner-image">
           <picture>
@@ -189,7 +189,7 @@
                   y2="10.6444"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#ED0233"/>
+                  <stop offset="0" stop-color="#ED0233"/>
                   <stop offset="1" stop-color="#003EB7"/>
                 </linearGradient>
                 <linearGradient
@@ -200,7 +200,7 @@
                   y2="9.18415"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#003D85"/>
+                  <stop offset="0" stop-color="#003D85"/>
                   <stop offset="0.885417" stop-color="#B80027"/>
                 </linearGradient>
               </defs>
@@ -249,7 +249,7 @@
           </li>
         </ol>
 
-        <ol class="program program__active" id="tab_1sub">
+        <ol class="program program--active" id="tab_1sub">
           <li class="program__item">
             <a class="program__item-real-button" href="#">
               <h3>С тренером</h3>
@@ -851,11 +851,11 @@
 
           <li class="advantages-card">
             <div>
-              <div>
+              <div class="advantages-card__part-numbers">
                 <span>900</span>
                 <p>кв/м</p>
               </div>
-              <div>
+              <div class="advantages-card__part-text">
                 <span>Площадь</span>
                 <p>Занимайтесь без очередей и толпучки</p>
               </div>
@@ -864,7 +864,7 @@
 
           <li class="advantages-center-card">
             <span>100</span>
-            <div>
+            <div class="advantages-center-card__inner">
               <span>Тренажеров</span>
               <p>Современные тренажеры на все группы мышц</p>
             </div>
@@ -872,11 +872,11 @@
 
           <li class="advantages-card">
             <div>
-              <div>
+              <div class="advantages-card__part-numbers">
                 <span>70</span>
                 <p>машин</p>
               </div>
-              <div>
+              <div class="advantages-card__part-text">
                 <span>Собственная парковка</span>
                 <p>Вы всегда найдете место для своей машины на нашей парковке</p>
               </div>
@@ -885,11 +885,11 @@
 
           <li class="advantages-card">
             <div>
-              <div>
+              <div class="advantages-card__part-numbers">
                 <span>350</span>
                 <p>мест</p>
               </div>
-              <div>
+              <div class="advantages-card__part-text">
                 <span>Комфорт</span>
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
@@ -898,11 +898,11 @@
 
           <li class="advantages-card">
             <div>
-              <div>
+              <div class="advantages-card__part-numbers">
                 <span>5+</span>
                 <p>лет</p>
               </div>
-              <div>
+              <div class="advantages-card__part-text">
                 <span>Тренерский опыт</span>
                 <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
               </div>
@@ -1321,13 +1321,13 @@
               <div>
                 <div class="custom-input">
                   <label>
-                    <input type="text" placeholder="Имя" pattern="[a-zA-Z]" required>
+                    <input type="text" name="name" placeholder="Имя" aria-label="поле ввода вашего имени" required>
                   </label>
                 </div>
 
                 <div class="custom-input">
                   <label>
-                    <input type="tel" placeholder="Телефон" required>
+                    <input type="tel" name="phone" placeholder="Телефон" aria-label="поле ввода вашего телефона" required>
                   </label>
                 </div>
               </div>

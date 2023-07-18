@@ -86,7 +86,7 @@
   }
 }
 
-.gym__inner-box div span {
+.gym__inner-box-inner span {
   display: block;
   margin: 0 0 39px;
   padding: 0;
@@ -96,13 +96,13 @@
 }
 
 @media (max-width: 1199px) {
-  .gym__inner-box div span {
+  .gym__inner-box-inner span {
     margin-bottom: 34px;
   }
 }
 
 @media (max-width: 767px) {
-  .gym__inner-box div span {
+  .gym__inner-box-inner span {
     margin-bottom: 25px;
   }
 }
@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 1199px) {
-  .gym__inner-box p span {
+  .gym__inner-box > span {
     display: none;
   }
 }

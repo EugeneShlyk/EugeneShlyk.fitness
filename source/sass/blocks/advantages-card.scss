@@ -34,7 +34,7 @@
   }
 }
 
-.advantages-card div {
+.advantages-card > div {
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 30px;
@@ -43,14 +43,14 @@
 }
 
 @media (max-width: 767px) {
-  .advantages-card div {
+  .advantages-card > div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-.advantages-card div div:nth-child(1) {
+.advantages-card__part-numbers {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -59,18 +59,17 @@
 }
 
 @media (max-width: 767px) {
-  .advantages-card div div:nth-child(1) {
+  .advantages-card__part-numbers {
     margin-bottom: 10px;
   }
 }
 
-.advantages-card div div:nth-child(1) span {
+.advantages-card__part-numbers span {
   display: block;
   margin: 0;
   padding: 0;
   background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
   background-clip: text;
-  //-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;
@@ -78,19 +77,19 @@
 }
 
 @media (max-width: 1199px) {
-  .advantages-card div div:nth-child(1) span {
+  .advantages-card__part-numbers span {
     font-size: 58px;
     line-height: 45px;
   }
 }
 
 @media (max-width: 767px) {
-  .advantages-card div div:nth-child(1) span {
+  .advantages-card__part-numbers span {
     margin-bottom: 3px;
   }
 }
 
-.advantages-card div div:nth-child(1) p {
+.advantages-card__part-numbers p {
   display: block;
   margin: 0;
   padding: 0;
@@ -100,7 +99,7 @@
   line-height: 21px;
 }
 
-.advantages-card div div:nth-child(2) {
+.advantages-card__part-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,7 +107,7 @@
   padding: 0;
 }
 
-.advantages-card div div:nth-child(2) span {
+.advantages-card__part-text span {
   margin: 0 0 auto;
   padding: 0;
   color: rgba(16, 38, 84, 1);
@@ -118,7 +117,7 @@
 }
 
 @media (max-width: 1199px) {
-  .advantages-card div div:nth-child(2) span {
+  .advantages-card__part-text span {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
@@ -126,12 +125,12 @@
 }
 
 @media (max-width: 767px) {
-  .advantages-card div div:nth-child(2) span {
+  .advantages-card__part-text span {
     margin-bottom: 7px;
   }
 }
 
-.advantages-card div div:nth-child(2) p {
+.advantages-card__part-text p {
   margin: 0;
   padding: 0;
   color: rgba(16, 38, 84, 1);
@@ -141,7 +140,7 @@
 }
 
 @media (max-width: 767px) {
-  .advantages-card div div:nth-child(2) p {
+  .advantages-card__part-text p {
     text-align: center;
   }
 }
