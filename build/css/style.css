@@ -1647,18 +1647,6 @@ button,
     width: 100%;
   }
 }
-.custom-input label input:hover:not(:disabled),
-.custom-input label textarea:hover:not(:disabled),
-.custom-textarea label input:hover:not(:disabled),
-.custom-textarea label textarea:hover:not(:disabled) {
-  border: 1px solid rgb(255, 255, 255);
-}
-.custom-input label input:focus:not(:disabled),
-.custom-input label textarea:focus:not(:disabled),
-.custom-textarea label input:focus:not(:disabled),
-.custom-textarea label textarea:focus:not(:disabled) {
-  border: 1px solid rgb(255, 255, 255);
-}
 .custom-input label input::-webkit-input-placeholder, .custom-input label textarea::-webkit-input-placeholder, .custom-textarea label input::-webkit-input-placeholder, .custom-textarea label textarea::-webkit-input-placeholder {
   color: rgb(255, 255, 255);
 }
@@ -1702,15 +1690,18 @@ button,
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .custom-input label input:invalid:not(:-moz-placeholder-shown), .custom-input label textarea:invalid:not(:-moz-placeholder-shown), .custom-textarea label input:invalid:not(:-moz-placeholder-shown), .custom-textarea label textarea:invalid:not(:-moz-placeholder-shown) {
+  border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
 }
 .custom-input label input:invalid:not(:-ms-input-placeholder), .custom-input label textarea:invalid:not(:-ms-input-placeholder), .custom-textarea label input:invalid:not(:-ms-input-placeholder), .custom-textarea label textarea:invalid:not(:-ms-input-placeholder) {
+  border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
 }
 .custom-input label input:invalid:not(:placeholder-shown),
 .custom-input label textarea:invalid:not(:placeholder-shown),
 .custom-textarea label input:invalid:not(:placeholder-shown),
 .custom-textarea label textarea:invalid:not(:placeholder-shown) {
+  border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
 }
 
@@ -2633,7 +2624,7 @@ button,
 
 .footer-list__item-link:hover svg,
 .footer-list__item-link:focus-visible svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-list__item-link::before {
@@ -2652,7 +2643,6 @@ button,
   background: rgb(16, 58, 174);
 }
 
-.footer-list__item-link:active::before,
 .footer-list__item-link:active::before {
   background: rgb(16, 38, 84);
 }
@@ -3188,10 +3178,10 @@ button,
 .program__item-real-button:hover .program__item-button,
 .program__item-real-button:focus-visible .program__item-button {
   color: rgb(255, 255, 255);
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border: 2px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  border-image-source: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 
 .program__item-real-button:active .program__item-button {
@@ -3662,7 +3652,7 @@ button,
 }
 
 .slider__button:disabled svg path {
-  stroke: #DCDCDC;
+  stroke: #dcdcdc;
 }
 
 @media (max-width: 1199px) {
@@ -4033,9 +4023,9 @@ button,
   display: block;
   margin: 0;
   padding: 0;
-  background: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
-  background-clip: text;
+  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;
@@ -4568,7 +4558,7 @@ button,
   outline: none;
 }
 
-.discount-secondary-block a:focus-visible:before {
+.discount-secondary-block a:focus-visible::before {
   content: "";
   position: absolute;
   top: -9px;
@@ -4752,10 +4742,10 @@ button,
 
 .faq-category__item-button--active {
   color: rgb(255, 255, 255);
-  background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  border-image-source: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 }
 
 .faq-category__item-button:disabled {
@@ -4991,7 +4981,7 @@ button,
 }
 
 .comments__button:disabled svg path {
-  stroke: #DCDCDC;
+  stroke: #dcdcdc;
 }
 
 .comments__button:disabled {

@@ -49,13 +49,13 @@
         width: 100%;
       }
 
-      &:hover:not(:disabled) {
-        border: 1px solid rgba(255, 255, 255, 1);
-      }
-
-      &:focus:not(:disabled) {
-        border: 1px solid rgba(255, 255, 255, 1);
-      }
+      //&:hover:not(:disabled) {
+      //  border: 1px solid rgba(255, 255, 255, 1);
+      //}
+      //
+      //&:focus-visible:not(:disabled) {
+      //  border: 1px solid rgba(255, 255, 255, 1);
+      //}
 
       &::placeholder {
         color: rgba(255, 255, 255, 1);
@@ -70,13 +70,10 @@
       }
 
       &:invalid:not(:placeholder-shown) {
+        border: none;
         border-bottom: 1px solid rgba(255, 61, 61, 1);
       }
-
-
     }
-
-
   }
 
   //&__label {

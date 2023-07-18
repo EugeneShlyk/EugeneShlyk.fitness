@@ -68,9 +68,9 @@
   display: block;
   margin: 0;
   padding: 0;
-  background: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
   background-clip: text;
-  -webkit-background-clip: text;
+  //-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 71px;
   font-weight: 700;

@@ -13,6 +13,7 @@
     padding: 51px 45px 48px;
   }
 }
+
 @media (max-width: 767px) {
   .games-box {
     width: 290px;
@@ -52,7 +53,7 @@
 }
 
 @media (max-width: 1199px) {
-  .games-box__text{
+  .games-box__text {
     margin-top: 8px;
     margin-bottom: 32px;
     font-size: 12px;

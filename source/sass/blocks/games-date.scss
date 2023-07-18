@@ -8,13 +8,13 @@
   color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
   .games-date {
     gap: 10px;
   }
 }
 
-.games-date__part{
+.games-date__part {
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
   .games-date__part-footer {
     padding-top: 1px;
   }
@@ -76,5 +76,3 @@
     line-height: 12px;
   }
 }
-
-

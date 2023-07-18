@@ -103,7 +103,7 @@
   outline: none;
 }
 
-.discount-secondary-block a:focus-visible:before {
+.discount-secondary-block a:focus-visible::before {
   content: "";
   position: absolute;
   top: -9px;

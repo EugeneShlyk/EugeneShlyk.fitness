@@ -77,7 +77,7 @@
 }
 
 .slider__button:active:not(:disabled) svg circle {
-    fill: rgba(16, 38, 84, 1);
+  fill: rgba(16, 38, 84, 1);
 }
 
 .slider__button:active:not(:disabled) svg path {
@@ -85,7 +85,7 @@
 }
 
 .slider__button:disabled svg path {
-  stroke: #DCDCDC;
+  stroke: #dcdcdc;
 }
 
 @media (max-width: 1199px) {
@@ -121,21 +121,19 @@
   transform: rotate(180deg);
 }
 
+.slider__button-next {
+  right: -55px;
+}
+
+@media (max-width: 1199px) {
   .slider__button-next {
-    right: -55px;
+    right: 45px;
   }
+}
 
-  @media (max-width: 1199px) {
-    .slider__button-next {
-      right: 45px;
-    }
+@media (max-width: 767px) {
+  .slider__button-next {
+    right: -7px;
+    transform: scale(0.6);
   }
-
-  @media (max-width: 767px) {
-    .slider__button-next {
-      right: -7px;
-      transform: scale(0.6);
-    }
-  }
-
-
+}

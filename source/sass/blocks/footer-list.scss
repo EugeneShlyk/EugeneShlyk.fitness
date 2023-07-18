@@ -27,14 +27,14 @@
   height: 35px;
 }
 
-.footer-list__item-link:hover ,
+.footer-list__item-link:hover,
 .footer-list__item-link:focus-visible {
   outline: none;
 }
 
 .footer-list__item-link:hover svg,
 .footer-list__item-link:focus-visible svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-list__item-link::before {
@@ -48,17 +48,14 @@
   border-radius: 50%;
 }
 
-.footer-list__item-link:hover::before  ,
+.footer-list__item-link:hover::before,
 .footer-list__item-link:focus-visible::before {
   background: rgba(16, 58, 174, 1);
 }
 
-.footer-list__item-link:active::before  ,
 .footer-list__item-link:active::before {
   background: rgba(16, 38, 84, 1);
 }
-
-
 
 .footer-list__item-image {
   position: absolute;
