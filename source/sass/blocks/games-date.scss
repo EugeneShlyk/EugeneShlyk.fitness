@@ -8,7 +8,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .games-date {
     gap: 10px;
   }
@@ -27,7 +27,7 @@
   line-height: 21px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .games-date__part > span {
     margin-bottom: 2px;
     font-size: 12px;
@@ -43,7 +43,7 @@
   border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .games-date__part-footer {
     padding-top: 1px;
   }
@@ -57,7 +57,7 @@
   line-height: 40px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .games-date__part-footer p {
     font-size: 24px;
     line-height: 24px;
@@ -70,7 +70,7 @@
   line-height: 16px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .games-date__part-footer span {
     font-size: 10px;
     line-height: 12px;

@@ -7,13 +7,13 @@
   padding-left: 19px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .advantages-card:nth-child(odd) {
     padding-left: 0;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card:nth-child(odd) {
     padding: 0 68px;
   }
@@ -23,7 +23,7 @@
   padding-right: 10px;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card:nth-child(even) {
     padding: 0 46px;
   }
@@ -37,7 +37,7 @@
   padding: 0;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card > div {
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@
   padding: 0;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card__part-numbers {
     margin-bottom: 10px;
   }
@@ -69,17 +69,16 @@
   font-size: 71px;
   font-weight: 700;
   line-height: 53px;
-
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .advantages-card__part-numbers > span {
     font-size: 58px;
     line-height: 45px;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card__part-numbers > span {
     margin-bottom: 3px;
   }
@@ -95,7 +94,7 @@
   line-height: 21px;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card__part-numbers > p {
     text-align: center;
   }
@@ -118,7 +117,7 @@
   line-height: 18px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .advantages-card__part-text span {
     font-size: 20px;
     font-weight: 700;
@@ -126,7 +125,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card__part-text span {
     margin-bottom: 7px;
     text-align: center;
@@ -142,7 +141,7 @@
   line-height: 22px;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-card__part-text p {
     text-align: center;
   }

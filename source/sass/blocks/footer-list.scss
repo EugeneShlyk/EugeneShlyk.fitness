@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .footer-list {
     column-span: all;
     justify-content: start;

@@ -31,7 +31,7 @@
   background: rgba(16, 38, 84, 0.89);
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .slider-card__info-trainer {
     padding: 45px 34px;
   }
@@ -95,6 +95,7 @@
   & > span {
     display: none;
   }
+
   .slider-card__info-trainer {
     display: flex;
   }

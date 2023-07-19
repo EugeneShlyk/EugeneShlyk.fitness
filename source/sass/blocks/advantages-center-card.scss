@@ -11,7 +11,7 @@
   background: rgba(28, 51, 116, 1);
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .advantages-center-card {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-center-card {
     padding: 42px 72px 42px;
     grid-column: 1 / 2;
@@ -39,7 +39,7 @@
   line-height: 74px;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-center-card span {
     line-height: 66px;
   }
@@ -60,7 +60,7 @@
   line-height: 39px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .advantages-center-card__inner span {
     font-size: 22px;
     line-height: 30px;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .advantages-center-card__inner span {
     margin-bottom: 11px;
   }

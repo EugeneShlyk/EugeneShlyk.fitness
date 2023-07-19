@@ -1,5 +1,7 @@
 const sliderWrapper = document.querySelector('.slider-wrapper');
 
+const Swiper = window.Swiper;
+
 export const workSlider = () =>
   sliderWrapper &&
   new Swiper('.swiper1', {
@@ -21,5 +23,3 @@ export const workSlider = () =>
     spaceBetween: 40,
     loop: true,
   });
-
-

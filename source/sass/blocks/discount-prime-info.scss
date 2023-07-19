@@ -9,39 +9,11 @@
   background: rgba(237, 2, 51, 1);
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .discount-prime-info {
     text-align: center;
   }
 }
-
-//.discount-prime-info-inner {
-//  margin: 0 0 19px;
-//  padding: 0;
-//}
-//
-//@media (max-width: 767px) {
-//  .discount-prime-info-inner {
-//    margin-bottom: 13px;
-//    text-align: center;
-//  }
-//}
-//
-//.discount-prime-info-inner p {
-//  margin: 0;
-//  padding: 0;
-//  font-size: 28px;
-//  font-weight: 700;
-//  line-height: 30px;
-//}
-//
-//.discount-prime-info-inner span {
-//  margin: 0;
-//  padding: 0;
-//  font-size: 70px;
-//  font-weight: 700;
-//  line-height: 73px;
-//}
 
 .discount-prime-info > span {
   margin: 0 0 auto;
@@ -51,7 +23,7 @@
   line-height: 25px;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .discount-prime-info > span {
     margin-bottom: 29px;
   }
@@ -70,7 +42,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .discount-prime-info > a {
     align-self: center;
   }
@@ -112,7 +84,7 @@
   padding: 0;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .discount-prime-info-inner {
     margin-bottom: 13px;
     text-align: center;

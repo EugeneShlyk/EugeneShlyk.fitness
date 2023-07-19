@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .accordion__item {
     padding: 21px 0 20px;
   }
@@ -58,13 +58,13 @@
   line-height: 24px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .accordion__item span {
     width: 560px;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .accordion__item span {
     width: 240px;
     font-size: 18px;
@@ -82,14 +82,14 @@
   line-height: 25px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .accordion__item p {
     width: 550px;
     margin-top: 9px;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .accordion__item p {
     margin-top: 0;
     width: 290px;
@@ -102,13 +102,13 @@
   margin-top: 18px;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .accordion__item--active p {
     margin-top: 16px;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .accordion__item--active p {
     margin-top: 14px;
   }
@@ -121,13 +121,13 @@
   right: 0;
 }
 
-@media (max-width: 1199px) {
+@include vp-1199 {
   .accordion__item svg {
     right: -118px;
   }
 }
 
-@media (max-width: 767px) {
+@include vp-767 {
   .accordion__item svg {
     top: 50%;
     right: -55px;
