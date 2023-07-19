@@ -3,33 +3,28 @@
   padding: 0;
 }
 
-.advantages-card:nth-child(1),
-.advantages-card:nth-child(4) {
+.advantages-card:nth-child(odd) {
   padding-left: 19px;
 }
 
 @media (max-width: 1199px) {
-  .advantages-card:nth-child(1),
-  .advantages-card:nth-child(4) {
+  .advantages-card:nth-child(odd) {
     padding-left: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .advantages-card:nth-child(1),
-  .advantages-card:nth-child(4) {
+  .advantages-card:nth-child(odd) {
     padding: 0 68px;
   }
 }
 
-.advantages-card:nth-child(3),
-.advantages-card:nth-child(5) {
-  //padding-right: 10px;
+.advantages-card:nth-child(even) {
+  padding-right: 10px;
 }
 
 @media (max-width: 767px) {
-  .advantages-card:nth-child(3),
-  .advantages-card:nth-child(5) {
+  .advantages-card:nth-child(even) {
     padding: 0 46px;
   }
 }
@@ -64,7 +59,7 @@
   }
 }
 
-.advantages-card__part-numbers span {
+.advantages-card__part-numbers > span {
   display: block;
   margin: 0;
   padding: 0;
@@ -74,22 +69,23 @@
   font-size: 71px;
   font-weight: 700;
   line-height: 53px;
+
 }
 
 @media (max-width: 1199px) {
-  .advantages-card__part-numbers span {
+  .advantages-card__part-numbers > span {
     font-size: 58px;
     line-height: 45px;
   }
 }
 
 @media (max-width: 767px) {
-  .advantages-card__part-numbers span {
+  .advantages-card__part-numbers > span {
     margin-bottom: 3px;
   }
 }
 
-.advantages-card__part-numbers p {
+.advantages-card__part-numbers > p {
   display: block;
   margin: 0;
   padding: 0;
@@ -97,6 +93,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+}
+
+@media (max-width: 767px) {
+  .advantages-card__part-numbers > p {
+    text-align: center;
+  }
 }
 
 .advantages-card__part-text {
@@ -127,6 +129,7 @@
 @media (max-width: 767px) {
   .advantages-card__part-text span {
     margin-bottom: 7px;
+    text-align: center;
   }
 }
 

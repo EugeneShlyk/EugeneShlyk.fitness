@@ -71,20 +71,20 @@
   outline: none;
 }
 
-.comments__button:hover:not(:disabled) svg circle,
-.comments__button:focus-visible:not(:disabled) svg circle {
+.comments__button:hover:not(:disabled) circle,
+.comments__button:focus-visible:not(:disabled) circle {
   stroke: rgba(16, 38, 84, 1);
 }
 
-.comments__button:active:not(:disabled) svg circle {
+.comments__button:active:not(:disabled) circle {
   fill: rgba(16, 38, 84, 1);
 }
 
-.comments__button:active:not(:disabled) svg path {
+.comments__button:active:not(:disabled) path {
   stroke: rgba(255, 255, 255, 1);
 }
 
-.comments__button:disabled svg path {
+.comments__button:disabled path {
   stroke: #dcdcdc;
 }
 
@@ -104,28 +104,28 @@
   }
 }
 
-.comments__button-prev {
+.comments__button--prev {
   left: -75px;
 }
 
 @media (max-width: 767px) {
-  .comments__button-prev {
+  .comments__button--prev {
     left: -55px;
     transform: scale(0.6);
   }
 }
 
-.comments__button-next svg {
+.comments__button--next svg {
   transform: rotate(180deg);
 }
 
-.comments__button-next {
+.comments__button--next {
   right: -75px;
 }
 //
 
 @media (max-width: 767px) {
-  .comments__button-next {
+  .comments__button--next {
     right: -55px;
     transform: scale(0.6);
   }

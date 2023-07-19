@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.slider-card__image-name {
+.slider-card > span {
   position: absolute;
   bottom: 27px;
   left: 50%;
@@ -55,7 +55,7 @@
   line-height: 19px;
 }
 
-.slider-card__info-trainer ul {
+.slider-card__info-trainer-list {
   margin: 0;
   padding: 0;
   color: rgba(255, 255, 255, 1);
@@ -65,13 +65,13 @@
   list-style: none;
 }
 
-.slider-card__info-trainer ul li {
+.slider-card__info-trainer-list li {
   position: relative;
   margin: 0 0 11px;
   padding: 0 0 0 24px;
 }
 
-.slider-card__info-trainer ul li::before {
+.slider-card__info-trainer-list li::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -82,7 +82,7 @@
 }
 
 .slider-card:hover {
-  .slider-card__image-name {
+  & > span {
     display: none;
   }
 
@@ -92,6 +92,9 @@
 }
 
 .slider-card:active {
+  & > span {
+    display: none;
+  }
   .slider-card__info-trainer {
     display: flex;
   }

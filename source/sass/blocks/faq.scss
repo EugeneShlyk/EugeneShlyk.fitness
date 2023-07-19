@@ -29,7 +29,7 @@
   }
 }
 
-.faq__title {
+.faq__inner h2 {
   margin: 0 0 38px;
   padding: 0;
   font-family: "AlumniSans", "Arial", sans-serif;
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 1199px) {
-  .faq__title {
+  .faq__inner h2 {
     margin-bottom: 40px;
     text-align: center;
     font-size: 42px;
@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 767px) {
-  .faq__title {
+  .faq__inner h2 {
     margin-bottom: 33px;
     font-size: 32px;
     font-weight: 600;

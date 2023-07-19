@@ -4,8 +4,8 @@ export const workSlider = () => {
   if (sliderWrapper) {
     new Swiper('.swiper1', {
       navigation: {
-        nextEl: '.slider__button-next',
-        prevEl: '.slider__button-prev',
+        nextEl: '.slider__button--next',
+        prevEl: '.slider__button--prev',
       },
       breakpoints: {
         320: {

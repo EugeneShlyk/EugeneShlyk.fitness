@@ -71,20 +71,20 @@
   outline: none;
 }
 
-.slider__button:hover:not(:disabled) svg circle,
-.slider__button:focus-visible:not(:disabled) svg circle {
+.slider__button:hover:not(:disabled) circle,
+.slider__button:focus-visible:not(:disabled) circle {
   stroke: rgba(16, 38, 84, 1);
 }
 
-.slider__button:active:not(:disabled) svg circle {
+.slider__button:active:not(:disabled) circle {
   fill: rgba(16, 38, 84, 1);
 }
 
-.slider__button:active:not(:disabled) svg path {
+.slider__button:active:not(:disabled) path {
   stroke: rgba(255, 255, 255, 1);
 }
 
-.slider__button:disabled svg path {
+.slider__button:disabled path {
   stroke: #dcdcdc;
 }
 
@@ -100,39 +100,39 @@
   }
 }
 
-.slider__button-prev {
+.slider__button--prev {
   left: -55px;
 }
 
 @media (max-width: 1199px) {
-  .slider__button-prev {
+  .slider__button--prev {
     left: 45px;
   }
 }
 
 @media (max-width: 767px) {
-  .slider__button-prev {
+  .slider__button--prev {
     left: -7px;
     transform: scale(0.6);
   }
 }
 
-.slider__button-next svg {
+.slider__button--next svg {
   transform: rotate(180deg);
 }
 
-.slider__button-next {
+.slider__button--next {
   right: -55px;
 }
 
 @media (max-width: 1199px) {
-  .slider__button-next {
+  .slider__button--next {
     right: 45px;
   }
 }
 
 @media (max-width: 767px) {
-  .slider__button-next {
+  .slider__button--next {
     right: -7px;
     transform: scale(0.6);
   }
