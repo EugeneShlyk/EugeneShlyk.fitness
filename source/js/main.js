@@ -7,6 +7,7 @@ import {workAccordion} from './modules/work-accordion.js';
 import {workSliderComments} from './modules/slider-comments.js';
 import {findVideos} from './modules/video.js';
 import {subscribe} from './modules/subscription.js';
+import {Validator} from './modules/form-validate/validator.js';
 
 // ---------------------------------
 
@@ -27,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    const validator = new Validator();
+    window.validator = validator;
     subscribe();
     workSlider();
     workTabs();
