@@ -2382,7 +2382,6 @@ button,
   text-transform: uppercase;
   text-align: end;
   -webkit-text-stroke: 2px;
-  text-stroke: 2px;
 }
 
 @media (max-width: 1198px) {
