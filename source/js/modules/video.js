@@ -1,8 +1,12 @@
-function findVideos() {
-  let videos = document.querySelectorAll('.gym__inner-video-wrapper');
+const videoWrapper = document.querySelector('.gym__inner-video-wrapper');
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
+function findVideos() {
+  if (videoWrapper) {
+    let videos = document.querySelectorAll('.gym__inner-video-wrapper');
+
+    for (let i = 0; i < videos.length; i++) {
+      setupVideo(videos[i]);
+    }
   }
 }
 

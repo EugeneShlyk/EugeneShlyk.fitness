@@ -41,6 +41,7 @@
   background: rgba(255, 255, 255, 1);
   border: 7px solid rgba(255, 255, 255, 1);
   cursor: pointer;
+  user-select: none;
 }
 
 @include vp-767 {
@@ -75,6 +76,7 @@
   display: block;
   margin: 0 0 12px;
   padding: 0;
+  color: rgba(16, 38, 84, 1);
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -183,10 +185,10 @@
 .program__item-button {
   display: block;
   width: 210px;
-  height: 66px;
+  min-height: 66px;
   box-sizing: border-box;
   margin: 0;
-  padding: 27px 0;
+  padding: 24px 0;
   color: rgba(16, 38, 84, 1);
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 12px;

@@ -1701,20 +1701,80 @@ button,
 .custom-textarea label textarea:disabled {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.custom-input label input:invalid:not(:-moz-placeholder-shown), .custom-input label textarea:invalid:not(:-moz-placeholder-shown), .custom-textarea label input:invalid:not(:-moz-placeholder-shown), .custom-textarea label textarea:invalid:not(:-moz-placeholder-shown) {
+.custom-input label input:invalid:not(:focus):not(:-moz-placeholder-shown), .custom-input label textarea:invalid:not(:focus):not(:-moz-placeholder-shown), .custom-textarea label input:invalid:not(:focus):not(:-moz-placeholder-shown), .custom-textarea label textarea:invalid:not(:focus):not(:-moz-placeholder-shown) {
   border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
 }
-.custom-input label input:invalid:not(:-ms-input-placeholder), .custom-input label textarea:invalid:not(:-ms-input-placeholder), .custom-textarea label input:invalid:not(:-ms-input-placeholder), .custom-textarea label textarea:invalid:not(:-ms-input-placeholder) {
+.custom-input label input:invalid:not(:focus):not(:-ms-input-placeholder), .custom-input label textarea:invalid:not(:focus):not(:-ms-input-placeholder), .custom-textarea label input:invalid:not(:focus):not(:-ms-input-placeholder), .custom-textarea label textarea:invalid:not(:focus):not(:-ms-input-placeholder) {
   border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
 }
-.custom-input label input:invalid:not(:placeholder-shown),
-.custom-input label textarea:invalid:not(:placeholder-shown),
-.custom-textarea label input:invalid:not(:placeholder-shown),
-.custom-textarea label textarea:invalid:not(:placeholder-shown) {
+.custom-input label input:invalid:not(:focus):not(:placeholder-shown),
+.custom-input label textarea:invalid:not(:focus):not(:placeholder-shown),
+.custom-textarea label input:invalid:not(:focus):not(:placeholder-shown),
+.custom-textarea label textarea:invalid:not(:focus):not(:placeholder-shown) {
   border: none;
   border-bottom: 1px solid rgb(255, 61, 61);
+}
+@media (max-width: 767px) {
+  .custom-input__label,
+.custom-textarea__label {
+    margin: 0 0 18px 0;
+  }
+}
+.custom-input__error,
+.custom-textarea__error {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  color: #ff1553;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .custom-input__error,
+.custom-textarea__error {
+    bottom: 20px;
+  }
+}
+.custom-input.is-invalid input,
+.custom-input.is-invalid textarea,
+.custom-textarea.is-invalid input,
+.custom-textarea.is-invalid textarea {
+  border: 2px solid #ff1553;
+}
+.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
+.custom-input.is-invalid textarea:focus,
+.custom-input.is-invalid textarea:hover,
+.custom-textarea.is-invalid input:focus,
+.custom-textarea.is-invalid input:hover,
+.custom-textarea.is-invalid textarea:focus,
+.custom-textarea.is-invalid textarea:hover {
+  border: 2px solid rgba(255, 21, 83, 0.5);
+}
+.custom-input.is-valid input,
+.custom-textarea.is-valid input {
+  border: 2px solid #22b259;
+}
+.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
+.custom-textarea.is-valid input:focus,
+.custom-textarea.is-valid input:hover {
+  border: 2px solid rgba(34, 178, 89, 0.5);
+}
+.custom-input .input-message,
+.custom-textarea .input-message {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+.custom-input .input-message.is-invalid,
+.custom-textarea .input-message.is-invalid {
+  color: #ff0000;
+}
+.custom-input .input-message.is-valid,
+.custom-textarea .input-message.is-valid {
+  color: #15ab07;
 }
 
 .custom-toggle {
@@ -2149,6 +2209,10 @@ button,
   line-height: 43px;
   text-transform: uppercase;
   letter-spacing: 0.72px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -2173,6 +2237,10 @@ button,
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.78px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -2419,6 +2487,10 @@ button,
   border: 4px solid rgb(255, 255, 255);
   cursor: pointer;
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -3098,6 +3170,10 @@ button,
   color: rgba(16, 38, 84, 0.5);
   background: transparent;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -3185,6 +3261,10 @@ button,
   background: rgb(255, 255, 255);
   border: 7px solid rgb(255, 255, 255);
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -3216,6 +3296,7 @@ button,
   display: block;
   margin: 0 0 12px;
   padding: 0;
+  color: rgb(16, 38, 84);
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -3319,11 +3400,11 @@ button,
 .program__item-button {
   display: block;
   width: 210px;
-  height: 66px;
+  min-height: 66px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 27px 0;
+  padding: 24px 0;
   color: rgb(16, 38, 84);
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 12px;
@@ -3477,6 +3558,10 @@ button,
   border: 4px solid rgb(255, 255, 255);
   text-align: center;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -3872,7 +3957,7 @@ button,
 @media (max-width: 1198px) {
   .advantages__inner {
     width: 768px;
-    padding: 87px 0 98px;
+    padding: 87px 0 94px;
   }
 }
 @media (max-width: 767px) {
@@ -3992,12 +4077,17 @@ button,
   }
 }
 .advantages-card:nth-child(even) {
-  padding-right: 10px;
+  padding-right: 0;
 }
 
+@media (max-width: 1198px) {
+  .advantages-card:nth-child(even) {
+    padding-right: 0;
+  }
+}
 @media (max-width: 767px) {
   .advantages-card:nth-child(even) {
-    padding: 0 46px;
+    padding: 0 41px;
   }
 }
 .advantages-card > div {
@@ -4113,6 +4203,7 @@ button,
 
 @media (max-width: 1198px) {
   .advantages-card__part-text span {
+    margin-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
@@ -4265,7 +4356,7 @@ button,
 @media (max-width: 1198px) {
   .discount__inner {
     width: 768px;
-    padding: 93px 45px;
+    padding: 93px 45px 98px;
   }
 }
 @media (max-width: 767px) {
@@ -4418,6 +4509,10 @@ button,
   letter-spacing: 0.7px;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(255, 255, 255);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -4572,6 +4667,10 @@ button,
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(28, 51, 116);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 1198px) {
@@ -4640,7 +4739,7 @@ button,
 @media (max-width: 1198px) {
   .faq__inner {
     width: 768px;
-    padding: 107px 45px 100px;
+    padding: 102px 45px 91px;
   }
 }
 @media (max-width: 767px) {
@@ -4763,6 +4862,10 @@ button,
   background: transparent;
   border: 1px solid rgba(28, 51, 116, 0.2);
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -4777,6 +4880,11 @@ button,
 .faq-category__item-button:hover:not(.faq-category__item-button--active):not(:disabled),
 .faq-category__item-button:focus-visible:not(.faq-category__item-button--active):not(:disabled) {
   border: 1px solid rgb(16, 38, 84);
+}
+
+.faq-category__item-button:hover,
+.faq-category__item-button:focus-visible {
+  outline: none;
 }
 
 .faq-category__item-button--active {
@@ -4957,7 +5065,7 @@ button,
 @media (max-width: 1198px) {
   .comments__inner {
     width: 566px;
-    padding: 84px 0 100px;
+    padding: 92px 0 100px;
   }
 }
 @media (max-width: 767px) {

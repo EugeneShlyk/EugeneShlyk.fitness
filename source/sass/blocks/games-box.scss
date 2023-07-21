@@ -76,6 +76,7 @@
   border: 4px solid rgba(255, 255, 255, 1);
   text-align: center;
   cursor: pointer;
+  user-select: none;
 }
 
 @include vp-1199 {
