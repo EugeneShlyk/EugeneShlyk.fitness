@@ -15,7 +15,6 @@
   margin: 0;
   padding: 34px 0 24px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
-  cursor: pointer;
 }
 
 @include vp-767 {
@@ -38,17 +37,13 @@
   display: none;
 }
 
-.accordion__item:hover circle,
-.accordion__item:focus-visible circle {
-  fill: rgba(16, 38, 84, 1);
+.accordion__item-inner {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.accordion__item:hover path,
-.accordion__item:focus-visible path {
-  stroke: rgba(255, 255, 255, 1);
-}
-
-.accordion__item span {
+.accordion__item-inner > span {
   position: relative;
   display: block;
   margin: 0;
@@ -56,6 +51,38 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.05px;
+}
+
+.accordion__item-inner-for-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@include vp-767 {
+  .accordion__item-inner-for-button {
+    top: 50%;
+    right: -5px;
+    transform: scale(0.75) translateY(-66%);
+  }
+}
+
+.accordion__item-inner-for-button:hover circle,
+.accordion__item-inner-for-button:focus-visible circle {
+  fill: rgba(16, 38, 84, 1);
+}
+
+.accordion__item-inner-for-button:hover path,
+.accordion__item-inner-for-button:focus-visible path {
+  stroke: rgba(255, 255, 255, 1);
 }
 
 @include vp-1199 {
@@ -114,23 +141,17 @@
   }
 }
 
-.accordion__item svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-}
+//.accordion__item svg {
+//  position: absolute;
+//  top: 50%;
+//  transform: translateY(-50%);
+//  right: 0;
+//}
 
-@include vp-1199 {
-  .accordion__item svg {
-    right: -118px;
-  }
-}
-
-@include vp-767 {
-  .accordion__item svg {
-    top: 50%;
-    right: -55px;
-    transform: scale(0.75) translateY(-66%);
-  }
-}
+//@include vp-767 {
+//  .accordion__item svg {
+//    top: 50%;
+//    right: -5px;
+//    transform: scale(0.75) translateY(-66%);
+//  }
+//}

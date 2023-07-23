@@ -8,7 +8,7 @@ function findVideos() {
 
 function setupVideo(video) {
   let link = video.querySelector('.gym__video-link');
-  let media = video.querySelector('.gym__video-link img');
+  let media = video.querySelector('.gym__video-image');
   let button = video.querySelector('.gym__inner-video-button');
   let id = parseMediaURL(media);
 
@@ -37,7 +37,7 @@ function createIframe(id) {
 
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('src', generateURL(id));
-  // iframe.classList.add('gym__video-image');
+  iframe.classList.add('gym__video-image');
 
   return iframe;
 }

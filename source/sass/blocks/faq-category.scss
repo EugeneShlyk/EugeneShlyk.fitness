@@ -66,6 +66,7 @@
 .faq-category__item-button:hover:not(.faq-category__item-button--active):not(:disabled),
 .faq-category__item-button:focus-visible:not(.faq-category__item-button--active):not(:disabled) {
   border: 1px solid rgba(16, 38, 84, 1);
+  outline: none;
 }
 
 .faq-category__item-button--active {
@@ -74,6 +75,7 @@
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  outline: none;
 }
 
 .faq-category__item-button:disabled {

@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 4px 0 18px;
+    padding: 14px 0 14px;
     width: 100%;
   }
 
@@ -50,7 +50,7 @@
       }
 
       &:hover:not(:disabled) {
-        border: 1px solid rgba(255, 255, 255, 1);
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
       }
 
       &:focus-visible:not(:disabled) {
@@ -72,6 +72,12 @@
       &:invalid:not(:placeholder-shown) {
         border: none;
         border-bottom: 1px solid rgba(255, 61, 61, 1);
+      }
+    }
+
+    @include vp-1199 {
+      input {
+        height: 32px;
       }
     }
   }

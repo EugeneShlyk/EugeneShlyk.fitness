@@ -7,17 +7,17 @@
 }
 
 .footer__inner {
-  display: grid;
-  grid-template-columns: auto min-content min-content min-content min-content min-content auto;
-  gap: 20px;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 1200px;
   margin: 0;
-  padding: 27px 18px 31px 13px;
+  padding: 29px 18px 29px 13px;
 }
 
 @include vp-1199 {
   .footer__inner {
+    align-items: center;
     gap: 0;
     width: 768px;
     padding: 29px 40px 37px 35px;
@@ -35,9 +35,8 @@
 }
 
 .footer__logo {
-  width: min-content;
   margin: 0;
-  padding: 10px;
+  padding: 14px 10px 6px 7px;
   color: rgba(255, 255, 255, 1);
 
   @include ff-alumniSans;
@@ -50,6 +49,8 @@
 
 @include vp-1199 {
   .footer__logo {
+    margin-right: 10px;
+    padding: 11px 10px 11px 7px;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -68,6 +69,30 @@
   }
 }
 
+.footer__logo {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+@include vp-1199 {
+  .footer__links {
+    gap: 0;
+  }
+}
+
 .footer__item {
   box-sizing: border-box;
   margin: 0;
@@ -81,13 +106,14 @@
 
 @include vp-1199 {
   .footer__item {
-    padding: 15px 15px;
+    padding: 15px 14px;
   }
 }
 
 @include vp-767 {
   .footer__item {
     display: block;
+    width: 100%;
     padding: 5px 5px 15px;
     font-size: 16px;
     line-height: 19px;
@@ -101,4 +127,8 @@
 .footer__item:focus-visible {
   border: 1px solid rgba(255, 255, 255, 1);
   outline: none;
+}
+
+.footer__item:active {
+  border: 1px solid rgba(3, 10, 26, 1);
 }

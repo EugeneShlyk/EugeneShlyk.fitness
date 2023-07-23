@@ -1,6 +1,23 @@
 .advantages-card {
+  position: relative;
   margin: 0;
   padding: 0;
+}
+
+.advantages-card:not(:nth-last-child(-n+3))::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(209, 10, 66, 0.2);
+}
+
+@include vp-1199 {
+  .advantages-card:not(:nth-last-child(-n+3))::after {
+    display: none;
+  }
 }
 
 .advantages-card:nth-child(odd) {
@@ -15,17 +32,13 @@
 
 @include vp-767 {
   .advantages-card:nth-child(odd) {
-    padding: 0 68px;
+    padding: 0 46px;
   }
-}
-
-.advantages-card:nth-child(even) {
-  padding-right: 10px;
 }
 
 @include vp-767 {
   .advantages-card:nth-child(even) {
-    padding: 0 46px;
+    padding: 0 40px;
   }
 }
 
@@ -119,6 +132,7 @@
 
 @include vp-1199 {
   .advantages-card__part-text span {
+    margin-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;

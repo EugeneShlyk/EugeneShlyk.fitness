@@ -12,14 +12,16 @@ export const workSlider = () =>
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 0,
       },
       768: {
         slidesPerView: 2,
+        spaceBetween: 30,
       },
-      1160: {
+      1200: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
-    spaceBetween: 40,
     loop: true,
   });

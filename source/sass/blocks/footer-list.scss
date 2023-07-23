@@ -10,13 +10,13 @@
   .footer-list {
     column-span: all;
     justify-content: start;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
 .footer-list__item {
   position: relative;
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   background: transparent;
 }
@@ -40,7 +40,8 @@
 .footer-list__item-link::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 5px;
   width: 25px;
   height: 25px;

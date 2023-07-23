@@ -4,6 +4,33 @@
   padding: 0;
 }
 
+.slider-card__image {
+  width: 260px;
+  height: 294px;
+  margin: 0;
+  padding: 0;
+}
+
+@include vp-1199 {
+  .slider-card__image {
+    width: 268px;
+    height: 294px;
+  }
+}
+
+@include vp-767 {
+  .slider-card__image {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.slider-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .slider-card > span {
   position: absolute;
   bottom: 27px;
@@ -27,7 +54,7 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 55px 45px;
+  padding: 55px 40px;
   background: rgba(16, 38, 84, 0.89);
 }
 
