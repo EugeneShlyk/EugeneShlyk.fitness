@@ -42,6 +42,7 @@
   line-height: 43px;
   text-transform: uppercase;
   letter-spacing: 0.72px;
+  user-select: none;
 }
 
 @include vp-1199 {
@@ -68,6 +69,7 @@
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.78px;
+  user-select: none;
 }
 
 @include vp-1199 {

@@ -51,6 +51,7 @@
   background: transparent;
   border: 1px solid rgba(28, 51, 116, 0.2);
   cursor: pointer;
+  user-select: none;
 }
 
 @include vp-767 {
@@ -66,6 +67,11 @@
 .faq-category__item-button:hover:not(.faq-category__item-button--active):not(:disabled),
 .faq-category__item-button:focus-visible:not(.faq-category__item-button--active):not(:disabled) {
   border: 1px solid rgba(16, 38, 84, 1);
+  outline: none;
+}
+
+.faq-category__item-button:hover,
+.faq-category__item-button:focus-visible {
   outline: none;
 }
 
