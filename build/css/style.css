@@ -2189,6 +2189,9 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 30px 20px 0;
@@ -2207,6 +2210,8 @@ button,
   }
 }
 .header__logo {
+  margin: 0;
+  padding: 10px 10px 0 2px;
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 600;
@@ -2221,6 +2226,7 @@ button,
 
 @media (max-width: 1199px) {
   .header__logo {
+    padding: 7px 10px 0 1px;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -2229,6 +2235,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__logo {
+    padding: 5px 10px 10px 0;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -2240,7 +2247,7 @@ button,
   font-size: 26px;
   font-weight: 600;
   line-height: 31px;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.95px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2252,7 +2259,7 @@ button,
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.69px;
   }
 }
 @media (max-width: 767px) {
@@ -2260,7 +2267,7 @@ button,
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.2px;
   }
 }
 .header__logo:hover, .header__logo:focus-visible,
@@ -2569,7 +2576,7 @@ button,
           align-items: flex-start;
   width: 1200px;
   margin: 0;
-  padding: 29px 18px 29px 13px;
+  padding: 32px 18px 29px 13px;
 }
 
 @media (max-width: 1199px) {
@@ -2579,7 +2586,7 @@ button,
             align-items: center;
     gap: 0;
     width: 768px;
-    padding: 29px 40px 37px 35px;
+    padding: 32px 40px 34px 35px;
   }
 }
 @media (max-width: 767px) {
@@ -2594,8 +2601,8 @@ button,
   }
 }
 .footer__logo {
-  margin: 0;
-  padding: 14px 10px 6px 7px;
+  margin: 0 8px 0 0;
+  padding: 20px 10px 0 8px;
   color: rgb(255, 255, 255);
   font-family: "AlumniSans", "Arial", sans-serif;
   font-size: 26px;
@@ -2608,7 +2615,7 @@ button,
 @media (max-width: 1199px) {
   .footer__logo {
     margin-right: 10px;
-    padding: 11px 10px 11px 7px;
+    padding: 11px 10px 11px 10px;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -3726,10 +3733,22 @@ button,
 }
 
 .slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  width: 100%;
   max-width: 1314px;
   margin: 0 auto;
-  padding: 0 77px;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -3915,8 +3934,9 @@ button,
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 55px 40px;
+  padding: 55px 40px 40px;
   background: rgba(16, 38, 84, 0.89);
+  overflow: scroll;
 }
 
 @media (max-width: 767px) {
@@ -3955,14 +3975,14 @@ button,
 .slider-card__info-trainer-list li {
   position: relative;
   margin: 0 0 11px;
-  padding: 0 0 0 24px;
+  padding: 0 0 0 32px;
 }
 
 .slider-card__info-trainer-list li::before {
   content: "";
   position: absolute;
   top: 8px;
-  left: 10px;
+  left: 15px;
   width: 6px;
   height: 6px;
   background: url("./../../img/slider/item-element.svg");
@@ -4423,7 +4443,7 @@ button,
 
 @media (max-width: 1199px) {
   .discount__inner h2 {
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 40px;
     font-size: 42px;
     line-height: 50px;
@@ -4643,7 +4663,6 @@ button,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  min-height: 211px;
   margin: 0;
   padding: 24px 28px 28px;
   color: rgb(28, 51, 116);
@@ -4785,7 +4804,7 @@ button,
 @media (max-width: 1199px) {
   .faq__inner {
     width: 768px;
-    padding: 102px 45px 92px;
+    padding: 102px 45px 90px;
   }
 }
 @media (max-width: 767px) {
@@ -5143,7 +5162,7 @@ button,
 
 @media (max-width: 1199px) {
   .comments__inner h2 {
-    margin-bottom: 40px;
+    margin: 0 5px 40px 0;
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 1.26px;
@@ -5531,8 +5550,8 @@ button,
 
 @media (max-width: 1199px) {
   .contacts__inner {
-    -ms-grid-columns: 314px 314px;
-    grid-template-columns: 314px 314px;
+    -ms-grid-columns: 316px 316px;
+    grid-template-columns: 316px 316px;
   }
 }
 @media (max-width: 767px) {
@@ -5556,7 +5575,7 @@ button,
 
 @media (max-width: 1199px) {
   .contacts__inner-part {
-    padding: 0 46px;
+    padding: 0 47px;
   }
 }
 @media (max-width: 767px) {
@@ -5574,7 +5593,7 @@ button,
   }
 }
 .contacts__inner-part--second-part {
-  padding-left: 53px;
+  padding-left: 47px;
   padding-right: 37px;
 }
 
@@ -5609,6 +5628,7 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  letter-spacing: -0.1px;
 }
 
 .contacts__inner-part p:last-child {

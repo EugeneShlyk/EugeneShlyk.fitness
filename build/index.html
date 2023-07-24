@@ -23,7 +23,28 @@
 
   <header class="header">
     <div class="header__inner">
-      <a class="header__logo" href="#" aria-label="на главную страницу">supergym</a>
+      <a class="header__logo" href="#" aria-label="на главную страницу">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/logo/logo-mobile-header.svg"
+            width="69"
+            height="24"
+          >
+          <source
+            media="(max-width: 1199px)"
+            srcset="./img/logo/logo-tablet.svg"
+            width="82"
+            height="17"
+          >
+          <img
+            src="./img/logo/logo-desktop-header.svg"
+            width="119"
+            height="23"
+            alt="логотип сайта"
+          >
+        </picture>
+      </a>
       <a class="header__phone" href="tel:+78005555555" aria-label="наш телефон">8-800-555-55-55</a>
     </div>
   </header>
@@ -1526,7 +1547,28 @@
     <div class="footer">
       <div class="footer__inner">
 
-        <a class="footer__logo" href="#" aria-label="в начало страницы">supergym</a>
+        <a class="footer__logo" href="#" aria-label="в начало страницы">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/logo/logo-mobile-footer.svg"
+              width="68"
+              height="15"
+            >
+            <source
+              media="(max-width: 1199px)"
+              srcset="./img/logo/logo-tablet.svg"
+              width="82"
+              height="18"
+            >
+            <img
+              src="./img/logo/logo-desktop-footer.svg"
+              width="86"
+              height="17"
+              alt="логотип сайта"
+            >
+          </picture>
+        </a>
         <div class="footer__links">
           <a class="footer__item footer__item--2" href="#" aria-label="переход к разделу">Услуги</a>
           <a class="footer__item footer__item--3" href="#" aria-label="переход к разделу">Абонементы</a>

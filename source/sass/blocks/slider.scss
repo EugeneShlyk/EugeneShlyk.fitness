@@ -5,13 +5,21 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  //overflow: hidden;
 }
 
 .slider__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  width: 100%;
   max-width: 1314px;
   margin: 0 auto;
-  padding: 0 77px;
+  padding: 0 20px;
+  //padding: 0;
+  overflow: hidden;
+
 }
 
 @include vp-767 {
