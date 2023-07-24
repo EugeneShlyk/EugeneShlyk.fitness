@@ -17,7 +17,9 @@
 
 @include vp-767 {
   .months-list {
+    justify-content: space-between;
     gap: 45px;
+    width: 100%;
     margin-bottom: 35px;
   }
 }
@@ -28,6 +30,7 @@
 }
 
 .months-list__item-button {
+  position: relative;
   padding: 20px 0 14px;
   border: none;
   font-size: 20px;
@@ -56,14 +59,32 @@
 
 .months-list__item-button--current {
   color: rgba(16, 38, 84, 1);
-  box-shadow: 0 2px 0 rgba(237, 2, 51, 1);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(237, 2, 51, 1);
+  }
 }
 
 .months-list__item-button:hover:not(:disabled),
 .months-list__item-button:focus-visible:not(:disabled) {
   color: rgba(16, 38, 84, 1);
-  box-shadow: 0 2px 0 rgba(237, 2, 51, 1);
   outline: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(237, 2, 51, 1);
+  }
 }
 
 .months-list__item-button:disabled {
