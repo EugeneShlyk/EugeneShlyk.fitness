@@ -20,7 +20,8 @@
 @include vp-767 {
   .program {
     gap: 35px;
-    grid-template-columns: 290px;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 }
 
@@ -29,7 +30,7 @@
   padding: 0;
 }
 
-.program__item-real-button {
+.program__item-inner {
   position: relative;
   z-index: 1;
   display: flex;
@@ -40,21 +41,24 @@
   padding: 55px 0 60px;
   background: rgba(255, 255, 255, 1);
   border: 7px solid rgba(255, 255, 255, 1);
-  user-select: none;
 }
 
 @include vp-767 {
-  .program__item-real-button {
-    padding: 42px 0 47px;
+  .program__item-inner {
+    padding: 42px 35px 47px;
   }
 }
 
-.program__item-real-button:hover,
-.program__item-real-button:focus-visible {
+.program__item-inner:hover {
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
-  outline: none;
+}
+
+.program__item-inner:focus-within {
+  border: 7px solid;
+  border-image-slice: 1;
+  border-image-source: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
 
   .program__item-button {
     color: rgba(255, 255, 255, 1);
@@ -62,16 +66,14 @@
     border: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    user-select: none;
+    outline: none;
   }
 }
 
-.program__item-real-button:active {
-  .program__item-button {
-    color: rgba(255, 255, 255, 0.7);
-  }
-}
 
-.program__item-real-button h3 {
+
+.program__item-inner h3 {
   display: block;
   margin: 0 0 12px;
   padding: 0;
@@ -82,14 +84,14 @@
 }
 
 @include vp-767 {
-  .program__item-real-button h3 {
+  .program__item-inner h3 {
     margin-bottom: 10px;
     font-size: 22px;
     line-height: 26px;
   }
 }
 
-.program__item-real-button > span {
+.program__item-inner > span {
   display: block;
   margin: 0 0 92px;
   padding: 0;
@@ -100,7 +102,7 @@
 }
 
 @include vp-767 {
-  .program__item-real-button > span {
+  .program__item-inner > span {
     margin-bottom: 65px;
   }
 }
@@ -197,4 +199,19 @@
   text-transform: uppercase;
   border: 2px solid rgba(16, 38, 84, 1);
   text-align: center;
+}
+
+@include vp-767 {
+  .program__item-button {
+    width: 100%;
+  }
+}
+
+.program__item-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(16, 58, 174, 1) linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  user-select: none;
 }
