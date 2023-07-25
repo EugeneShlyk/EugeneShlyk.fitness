@@ -193,6 +193,7 @@
 .hero__box a {
   display: block;
   width: 100%;
+  max-width: 232px;
   height: 61px;
   box-sizing: border-box;
   margin: 0 0 0 auto;
@@ -213,6 +214,7 @@
 @include vp-1199 {
   .hero__box a {
     width: 100%;
+    max-width: none;
   }
 }
 
