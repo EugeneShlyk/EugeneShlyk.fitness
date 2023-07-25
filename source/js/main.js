@@ -36,8 +36,11 @@ window.addEventListener('DOMContentLoaded', () => {
     workAccordion();
     workSliderComments();
     findVideos();
+
   });
 });
+
+
 
 // ---------------------------------
 

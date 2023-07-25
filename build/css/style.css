@@ -2661,7 +2661,7 @@ button,
     gap: 0;
   }
 }
-footer__item--wrapper {
+.footer__item--wrapper {
   margin: 0;
   padding: 0;
 }
@@ -2672,6 +2672,7 @@ footer__item--wrapper {
   }
 }
 .footer__item {
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -2690,7 +2691,6 @@ footer__item--wrapper {
 }
 @media (max-width: 767px) {
   .footer__item {
-    display: block;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -5591,6 +5591,7 @@ footer__item--wrapper {
 .free button:focus-visible:not(:disabled) {
   color: rgb(16, 58, 174);
   background: rgb(255, 255, 255);
+  outline: none;
 }
 
 .free button:active:not(:disabled) {
@@ -5774,6 +5775,37 @@ footer__item--wrapper {
     line-height: 27px;
   }
 }
+.contacts__inner-part a {
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.1px;
+}
+
+.contacts__inner-part a:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .contacts__inner-part a:last-child {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .contacts__inner-part a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.contacts__inner-part a:hover, .contacts__inner-part a:focus-visible {
+  opacity: 0.7;
+}
+.contacts__inner-part a:active {
+  opacity: 0.3;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

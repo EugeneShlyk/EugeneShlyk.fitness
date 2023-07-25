@@ -96,6 +96,7 @@
 .free button:focus-visible:not(:disabled) {
   color: rgba(16, 58, 174, 1);
   background: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .free button:active:not(:disabled) {
