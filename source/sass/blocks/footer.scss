@@ -19,14 +19,13 @@
   .footer__inner {
     align-items: center;
     gap: 0;
-    width: 768px;
+    width: 100%;
     padding: 32px 40px 35px 35px;
   }
 }
 
 @include vp-767 {
   .footer__inner {
-    width: 100%;
     display: block;
     gap: 25px;
     padding: 40px 10px 51px;

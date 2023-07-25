@@ -17,8 +17,8 @@
 
 @include vp-1199 {
   .advantages__inner {
-    width: 768px;
-    padding: 87px 0 94px;
+    width: 100%;
+    padding: 87px 45px 94px;
   }
 }
 
@@ -72,9 +72,10 @@
 
 @media (max-width: 1199px) {
   .advantages__list {
+    width: 100%;
     column-gap: 30px;
     row-gap: 45px;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

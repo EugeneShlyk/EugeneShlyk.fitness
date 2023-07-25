@@ -19,6 +19,7 @@
 
 @include vp-1199 {
   .gym__inner {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 35px;
@@ -45,15 +46,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 510px;
+    width: 100%;
     padding: 0;
   }
 }
 
 @include vp-767 {
   .gym__inner-box {
-    //align-items: flex-start;
-    width: 100%;
     padding: 0 15px;
   }
 }
@@ -114,7 +113,26 @@
   }
 }
 
-.gym__inner-box > p {
+.gym__inner-box-for-paragraph {
+  margin: 0;
+  padding: 0;
+}
+
+@include vp-1199 {
+  .gym__inner-box-for-paragraph {
+    max-width: 854px;
+    margin: 0;
+    padding: 0 88px;
+  }
+}
+
+@include vp-767 {
+  .gym__inner-box-for-paragraph {
+    padding: 0;
+  }
+}
+
+.gym__inner-box-for-paragraph > p {
   margin: 0 0 8px;
   padding: 0;
   font-size: 16px;
@@ -123,19 +141,19 @@
 }
 
 @include vp-1199 {
-  .gym__inner-box > p {
+  .gym__inner-box-for-paragraph > p {
     text-align: center;
   }
 }
 
 @include vp-767 {
-  .gym__inner-box > p {
+  .gym__inner-box-for-paragraph > p {
     padding-right: 28px;
     text-align: start;
   }
 }
 
-.gym__inner-box > span {
+.gym__inner-box-for-paragraph > span {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -144,7 +162,7 @@
 }
 
 @include vp-1199 {
-  .gym__inner-box > span {
+  .gym__inner-box-for-paragraph > span {
     display: none;
   }
 }
@@ -182,7 +200,8 @@
     height: 167px;
     top: auto;
     bottom: 99px;
-    left: 250px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
