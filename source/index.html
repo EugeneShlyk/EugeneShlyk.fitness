@@ -395,7 +395,11 @@
                   <use href="img/sprite.svg#ruble-mini"></use>
                 </svg>
               </p>
-              <a class="program__item-button" href="#" aria-label="на страницу оформления абонемента на 12 занятий в месяц">
+              <a
+                class="program__item-button"
+                href="#"
+                aria-label="на страницу оформления абонемента на 12 занятий в месяц"
+              >
                 <span>купить абонемент</span>
               </a>
             </div>
@@ -479,7 +483,11 @@
                   <use href="img/sprite.svg#ruble-mini"></use>
                 </svg>
               </p>
-              <a class="program__item-button" href="#" aria-label="на страницу оформления абонемента на 12 занятий в месяц">
+              <a
+                class="program__item-button"
+                href="#"
+                aria-label="на страницу оформления абонемента на 12 занятий в месяц"
+              >
                 <span>купить абонемент</span>
               </a>
             </div>
@@ -1469,32 +1477,51 @@
     <div class="main-footer">
       <div class="main-footer__left-side">
         <div class="free">
-          <form action="https://echo.htmlacademy.ru/." method="get">
-
+          <form action="https://echo.htmlacademy.ru/." id="form" method="get">
             <fieldset>
               <legend class="visually-hidden">Блок отправки формы</legend>
               <span>Бесплатное занятие</span>
               <div class="free__inner">
-                <div class="custom-input">
+                <div
+                  class="custom-input"
+                  data-validate-type="text"
+                  data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-required.
+                >
                   <label>
                     <input
+                      class="required"
                       type="text"
-                      name="name"
+                      name="user-name"
                       placeholder="Имя"
+                      aria-invalid="true"
                       aria-label="поле ввода вашего имени"
-                      required
+                      data-validate-type="text"
                     >
+                    <!--                      required-->
                   </label>
                 </div>
 
-                <div class="custom-input">
+                <div
+                  class="custom-input"
+                  data-validate-type="phone"
+                  data-on-input-validate
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно"
+                  data-required
+                >
                   <label>
                     <input
+                      class="required"
                       type="tel"
                       name="phone"
                       placeholder="Телефон"
                       aria-label="поле ввода вашего телефона"
-                      required
+                      data-validate-type="phone"
+                      data-message-base="Сообщение"
                     >
                   </label>
                 </div>
@@ -1560,11 +1587,22 @@
           </picture>
         </a>
         <div class="footer__links">
-          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Услуги</a></div>
-          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Абонементы</a></div>
-          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Акции</a></div>
-          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Тренеры</a></div>
-          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Расписание</a></div>
+          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Услуги</a>
+          </div>
+          <div class="footer__item--wrapper"><a
+            class="footer__item"
+            href="#"
+            aria-label="переход к разделу"
+          >Абонементы</a></div>
+          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Акции</a>
+          </div>
+          <div class="footer__item--wrapper"><a class="footer__item" href="#" aria-label="переход к разделу">Тренеры</a>
+          </div>
+          <div class="footer__item--wrapper"><a
+            class="footer__item"
+            href="#"
+            aria-label="переход к разделу"
+          >Расписание</a></div>
         </div>
 
         <ul class="footer-list">
