@@ -4050,14 +4050,14 @@ button,
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 55px 40px 40px;
+  padding: 55px 0 0;
   background: rgba(16, 38, 84, 0.89);
-  overflow: scroll;
+  overflow: auto;
 }
 
 @media (max-width: 767px) {
   .slider-card__info-trainer {
-    padding: 45px 34px;
+    padding: 45px 0 0;
   }
 }
 .slider-card__info-trainer h3 {
@@ -4079,7 +4079,8 @@ button,
 }
 
 .slider-card__info-trainer-list {
-  margin: 0;
+  width: 178px;
+  margin: 0 auto;
   padding: 0;
   color: rgb(255, 255, 255);
   font-size: 14px;
@@ -4088,6 +4089,11 @@ button,
   list-style: none;
 }
 
+@media (max-width: 1199px) {
+  .slider-card__info-trainer-list {
+    width: 188px;
+  }
+}
 .slider-card__info-trainer-list li {
   position: relative;
   margin: 0 0 11px;

@@ -7,8 +7,6 @@ import {workAccordion} from './modules/work-accordion.js';
 import {workSliderComments} from './modules/slider-comments.js';
 import {findVideos} from './modules/video.js';
 import {subscribe} from './modules/subscription.js';
-// import {Validator} from './modules/form-validate/validator.js';
-
 
 // ---------------------------------
 
@@ -31,42 +29,16 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     window.form = form;
 
-    // window.form.reset(form);
-    // window.form.initPhoneInput(parent);
-    // window.form.validateForm(form);
-    // window.form.validateFormElement(item, true);
-
-    // const validator = new Validator();
-    // window.validator = validator;
     subscribe();
     workSlider();
     workTabs();
     workAccordion();
     workSliderComments();
     findVideos();
-
   });
 });
 
-
-// const form = document.getElementById('form');
-// form.addEventListener('submit', formSend);
-//
-// async function formSend(e) {
-//   e.preventDefault();
-//
-//   let error = formValidate(form);
-//
-//   const formValidate = (form) => {
-//     let error = 0;
-//     let required = document.querySelector('.required');
-//   };
-//
-// }
-
 // ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
 
 // привязывайте js не на классы, а на дата атрибуты (data-validate)
 
