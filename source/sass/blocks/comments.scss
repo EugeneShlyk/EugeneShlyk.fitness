@@ -36,6 +36,21 @@
   }
 }
 
+.comments__inner-title-link {
+  text-decoration: none;
+}
+
+.comments__inner-title-link {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .comments__inner h2 {
   margin: 0 0 37px 10px;
   padding: 0;
