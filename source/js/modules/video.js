@@ -13,10 +13,9 @@ function findVideos() {
 function setupVideo(video) {
   let link = video.querySelector('.gym__video-link');
   let button = video.querySelector('.gym__inner-video-button');
-  let id = 'https://www.youtube.com/embed/9TZXsZItgdw';
 
   video.addEventListener('click', () => {
-    let iframe = createIframe(id);
+    let iframe = createIframe();
 
     link.remove();
     button.remove();
