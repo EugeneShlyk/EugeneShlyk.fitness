@@ -1476,7 +1476,7 @@
 
     <div class="main-footer">
       <div class="main-footer__left-side">
-        <div class="free">
+        <div class="free" data-form-validate="data-form-validate" data-callback="base">
           <form action="https://echo.htmlacademy.ru/." id="form" method="get">
             <fieldset>
               <legend class="visually-hidden">Блок отправки формы</legend>
@@ -1488,41 +1488,44 @@
                   data-limitation="name"
                   data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля"
-                  data-required.
+                  data-required="data-required"
                 >
                   <label>
                     <input
-                      class="required"
                       type="text"
                       name="user-name"
+                      id="user-name"
                       placeholder="Имя"
-                      aria-invalid="true"
+
                       aria-label="поле ввода вашего имени"
-                      data-validate-type="text"
+
                     >
-                    <!--                      required-->
+                    <!--                      data-validate-type="text"-->
+                    <!--                      aria-invalid="true"-->
+
                   </label>
                 </div>
 
                 <div
                   class="custom-input"
                   data-validate-type="phone"
-                  data-on-input-validate
+                  data-on-input-validate="data-on-input-validate"
                   data-message-base="Поле обязательно к заполнению"
                   data-message-extra="Проверьте корректность заполнения поля"
                   data-message-success="Поле заполнено верно"
-                  data-required
+                  data-required="data-required"
                 >
                   <label>
                     <input
-                      class="required"
                       type="tel"
                       name="phone"
+                      id="phone"
                       placeholder="Телефон"
                       aria-label="поле ввода вашего телефона"
-                      data-validate-type="phone"
-                      data-message-base="Сообщение"
                     >
+
+<!--                    data-validate-type="phone"-->
+<!--                    data-message-base="Сообщение"-->
                   </label>
                 </div>
               </div>
