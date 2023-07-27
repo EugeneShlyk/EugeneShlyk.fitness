@@ -44,6 +44,15 @@
   line-height: 31px;
   letter-spacing: 0.52px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @include vp-1199 {
@@ -65,17 +74,6 @@
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.4px;
-  }
-}
-
-.footer__logo {
-  &:hover,
-  &:focus-visible {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
