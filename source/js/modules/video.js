@@ -1,39 +1,25 @@
-const videoWrapper = document.querySelector('.gym__inner-video-wrapper');
+const video = document.querySelector('.gym__video');
+const button = document.querySelector('.gym__inner-video-button');
 
-function findVideos() {
-  if (videoWrapper) {
-    let videos = document.querySelectorAll('.gym__inner-video-wrapper');
-
-    for (let i = 0; i < videos.length; i++) {
-      setupVideo(videos[i]);
-    }
+const videoButtonHandler = () => {
+  if (video.paused) {
+    video.play();
+    button.style.display = 'none';
+  } else {
+    video.pause();
   }
-}
+};
 
-function setupVideo(video) {
-  let link = video.querySelector('.gym__video-link');
-  let button = video.querySelector('.gym__inner-video-button');
+const videoOnclick = () => {
+  video.pause();
+  button.style.display = 'block';
+};
 
-  video.addEventListener('click', () => {
-    let iframe = createIframe();
+export const videoWork = () => {
+  if (video) {
+    video.addEventListener('click', videoOnclick);
+    button.addEventListener('click', videoButtonHandler);
+  }
+};
 
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
-  });
 
-  link.removeAttribute('href');
-  video.classList.add('gym__inner-video-wrapper--enabled');
-}
-
-function createIframe() {
-  let iframe = document.createElement('iframe');
-
-  iframe.setAttribute('allowfullscreen', '');
-  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw');
-  iframe.classList.add('gym__video-image');
-
-  return iframe;
-}
-
-export {findVideos};

@@ -215,33 +215,17 @@
   }
 }
 
-.gym__video-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+.gym__video {
+  width: 364px;
+  height: 228px;
+  object-fit: cover;
 
-.gym__inner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-@include vp-1199 {
-  .gym__inner-video {
+  @include vp-1199 {
     width: 266px;
     height: 167px;
   }
-}
 
-@include vp-767 {
-  .gym__inner-video {
+  @include vp-767 {
     width: 320px;
     height: 167px;
   }
@@ -257,7 +241,6 @@
   border: none;
   background: transparent;
   transform: translate(-50%, -50%);
-  pointer-events: none;
 }
 
 @include vp-1199 {
@@ -271,19 +254,18 @@
     border: none;
     background: transparent;
     transform: translate(-50%, -50%) scale(0.72);
-    pointer-events: none;
   }
 }
 
-.gym__inner-video-wrapper--enabled {
+.gym__inner-video-button-very-small-circle {
+  display: none;
+}
+
+.gym__inner-video-button:hover {
   cursor: pointer;
 }
 
-.gym__inner-video-wrapper--enabled .gym__inner-video-button {
-  display: block;
-}
-
-.gym__video-link:hover + .gym__inner-video-button svg {
+.gym__inner-video-button:hover svg {
   .gym__inner-video-button-big-circle {
     stroke: rgba(16, 38, 84, 1);
     stroke-opacity: 1;
@@ -311,6 +293,25 @@
   }
 
   svg .gym__inner-video-button-triangle {
+    fill: rgba(16, 38, 84, 1);
+  }
+}
+
+.gym__inner-video-button:active {
+  .gym__inner-video-button-big-circle {
+    stroke: rgba(16, 38, 84, 1);
+    stroke-opacity: 1;
+  }
+
+  .gym__inner-video-button-small-circle {
+    display: none;
+  }
+
+  .gym__inner-video-button-very-small-circle {
+    display: block;
+  }
+
+  .gym__inner-video-button-triangle {
     fill: rgba(16, 38, 84, 1);
   }
 }

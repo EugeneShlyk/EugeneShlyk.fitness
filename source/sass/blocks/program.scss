@@ -49,12 +49,7 @@
   }
 }
 
-.program__item-inner:hover {
-  border: 7px solid;
-  border-image-slice: 1;
-  border-image-source: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
-}
-
+.program__item-inner:hover,
 .program__item-inner:focus-within {
   border: 7px solid;
   border-image-slice: 1;

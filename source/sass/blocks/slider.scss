@@ -37,6 +37,12 @@
   padding: 15px 0 105px;
 }
 
+@media (min-width: 1200px) and (max-width: 1360px) {
+  .slider__inner {
+    width: 1055px;
+  }
+}
+
 @include vp-1199 {
   .slider__inner {
     width: 566px;
