@@ -21,5 +21,3 @@ export const videoWork = () => {
     button.addEventListener('click', videoButtonHandler);
   }
 };
-
-

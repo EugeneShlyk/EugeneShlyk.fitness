@@ -1174,13 +1174,6 @@ button.swiper-pagination-bullet {
 }
 @font-face {
   font-family: "RobotoCondensed";
-  src: local("Custom Font"), url("./../../fonts/RobotoCondensed/RobotoCondensed-medium.woff2"), url("./../../fonts/RobotoCondensed/RobotoCondensed-medium.woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "RobotoCondensed";
   src: local("Custom Font"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2"), url("./../../fonts/RobotoCondensed/RobotoCondensed-Bold.woff");
   font-weight: 700;
   font-style: normal;
@@ -2108,7 +2101,7 @@ button,
   .footer__logo {
     display: block;
     padding: 0;
-    margin-bottom: 16px;
+    margin: 12px 20px 16px 5px;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -2130,13 +2123,13 @@ button,
     gap: 0;
   }
 }
-.footer__item--wrapper {
+.footer__item-wrapper {
   margin: 0;
   padding: 0;
 }
 
 @media (max-width: 767px) {
-  .footer__item--wrapper {
+  .footer__item-wrapper {
     width: 100%;
   }
 }
@@ -4535,7 +4528,6 @@ button,
     width: 100%;
     padding: 13px 0;
     font-size: 16px;
-    font-weight: 400;
     line-height: 16px;
   }
 }
