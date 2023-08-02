@@ -13,7 +13,7 @@
 
 @include vp-767 {
   .comment-card {
-    grid-template-columns: 90px 78px;
+    grid-template-columns: 51% 49%;
     column-gap: 8px;
     row-gap: 10px;
     min-height: 335px;
